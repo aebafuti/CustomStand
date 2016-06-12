@@ -1,58 +1,59 @@
-<!DOCTYPE html>
+ï»¿<!DOCTYPE html>
 <html lang="ja">
 <head>
 	<META name="GENERATOR" content="IBM WebSphere Homepage Builder V6.0.0 for Windows">
-	<META http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+	<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<META http-equiv="Content-Style-Type" content="text/css">
-	<meta charset="Shift_JIS">
+	<meta charset="UTF-8">
+
 	<link rel=stylesheet type="text/css" href="css/custom.css">  
 	<script src="lib/easeljs-0.8.2.min.js"></script>
 	<script src="lib/preloadjs-0.6.2.min.js"></script>
 	<script src="lib/tweenjs-0.6.2.min.js"></script>
-	<title>ƒJƒXƒ^ƒ€—§‚¿ŠG</title>
+	<title>ã‚«ã‚¹ã‚¿ãƒ ç«‹ã¡çµµ</title>
 	
 </head>
 <body>
 <div id="wrap"> 
 	<div id="header">
-		ƒJƒXƒ^ƒ€—§‚¿ŠG@ver0.8
+		ã‚«ã‚¹ã‚¿ãƒ ç«‹ã¡çµµã€€ver0.8
         </div><!-- /header -->  
 	<div id="inner">
 		<div id="leftWrap">
 			<form name="customForm" id="customForm" action="">
 			<div class="item">
-				<div class="itemLabel">”¯Œ^</div>
+				<div class="itemLabel">é«ªåž‹</div>
 				<div class="itemContents">
-					<label>ƒoƒ“ƒO<select name="frontHair" onchange="FrontHair(this.value)">
-					<option value="pattun0">ƒpƒbƒcƒ“</option>
-					<option value="pattun1">ƒpƒbƒcƒ“(’Z)</option>
-					<option value="pattun2">ƒpƒbƒcƒ“(’·)</option>
-					<option value="jagi0">ƒWƒƒƒM</option>
-					<option value="jagi1">ƒWƒƒƒM(’Z)</option>
-					<option value="jagi2">ƒWƒƒƒM(’·)</option>
+					<label>ãƒãƒ³ã‚°<select name="frontHair" onchange="FrontHair(this.value)">
+					<option value="pattun0">ãƒ‘ãƒƒãƒ„ãƒ³</option>
+					<option value="pattun1">ãƒ‘ãƒƒãƒ„ãƒ³(çŸ­)</option>
+					<option value="pattun2">ãƒ‘ãƒƒãƒ„ãƒ³(é•·)</option>
+					<option value="jagi0">ã‚¸ãƒ£ã‚®</option>
+					<option value="jagi1">ã‚¸ãƒ£ã‚®(çŸ­)</option>
+					<option value="jagi2">ã‚¸ãƒ£ã‚®(é•·)</option>
 					</select></label>
 					<br>
 
-					<label>ƒTƒCƒh<select name="sideHair" onchange="SideHair(this.value)">
-					<option value="">‚È‚µ</option>
-					<option value="side0" selected>ƒXƒgƒŒ[ƒg</option>
-					<option value="side1">ƒXƒgƒŒ[ƒg(’Z)</option>
-					<option value="side2">ƒXƒgƒŒ[ƒg(’·)</option>
-					<option value="wave0">ƒEƒF[ƒu</option>
-					<option value="wave2">ƒEƒF[ƒu(’·)</option>
+					<label>ã‚µã‚¤ãƒ‰<select name="sideHair" onchange="SideHair(this.value)">
+					<option value="">ãªã—</option>
+					<option value="side0" selected>ã‚¹ãƒˆãƒ¬ãƒ¼ãƒˆ</option>
+					<option value="side1">ã‚¹ãƒˆãƒ¬ãƒ¼ãƒˆ(çŸ­)</option>
+					<option value="side2">ã‚¹ãƒˆãƒ¬ãƒ¼ãƒˆ(é•·)</option>
+					<option value="wave0">ã‚¦ã‚§ãƒ¼ãƒ–</option>
+					<option value="wave2">ã‚¦ã‚§ãƒ¼ãƒ–(é•·)</option>
 					</select></label>
 					<br>
 
-					<label>ƒoƒbƒN<select name="backHair" onchange="BackHair(this.value)">
-					<option value="long">ƒƒ“ƒO</option>
-					<option value="bob">ƒ{ƒu</option>
-					<option value="pony">ƒ|ƒj[ƒe[ƒ‹</option>
-					<option value="twin">ƒcƒCƒ“ƒe[ƒ‹</option>
+					<label>ãƒãƒƒã‚¯<select name="backHair" onchange="BackHair(this.value)">
+					<option value="long">ãƒ­ãƒ³ã‚°</option>
+					<option value="bob">ãƒœãƒ–</option>
+					<option value="pony">ãƒãƒ‹ãƒ¼ãƒ†ãƒ¼ãƒ«</option>
+					<option value="twin">ãƒ„ã‚¤ãƒ³ãƒ†ãƒ¼ãƒ«</option>
 					</label>
 					</select>
 				</div><!-- /itemContents -->
 						
-				<div class="itemLabel">”¯F</div>
+				<div class="itemLabel">é«ªè‰²</div>
 				<div class="itemContents">
 					R<input type="range" name="hairColorR" max="255" oninput="HairColor(this.value, 0)"  value="0"><br>
 					G<input type="range" name="hairColorG" max="255" oninput="HairColor(this.value, 1)"  value="0"><br>
@@ -61,53 +62,53 @@
 			</div><!-- /item -->
 	
 			<div class="item">
-				<div class="itemLabel">–Úi—ÖŠsE“µEƒIƒvƒVƒ‡ƒ“j</div>
+				<div class="itemLabel">ç›®ï¼ˆè¼ªéƒ­ãƒ»çž³ãƒ»ã‚ªãƒ—ã‚·ãƒ§ãƒ³ï¼‰</div>
 				<div class="itemContents">
 					<input type="number" name="eye" min="0" max="2" value="0" style="width:30px;" onchange="Eye(this.value)">
 					<input type="number" name="pupil" min="0" max="2" value="0" style="width:30px;" onchange="Pupil(this.value)">
 					<select id="pupilOption" name="pupilOption" onchange="PupilOption(this.value)">
-					<option value="">‚È‚µ</option>
-					<option value="heart">ƒn[ƒg</option>
-					<option value="star">¯</option>
-					<option value="kira">‚µ‚¢‚½‚¯</option>
+					<option value="">ãªã—</option>
+					<option value="heart">ãƒãƒ¼ãƒˆ</option>
+					<option value="star">æ˜Ÿ</option>
+					<option value="kira">ã—ã„ãŸã‘</option>
 					</select>
 				</div><!-- /itemContents -->
 		
-				<div class="itemLabel">–Ú‚ÌF</div>
+				<div class="itemLabel">ç›®ã®è‰²</div>
 				<div class="itemContents">
 					R<input type="range" name="eyeColorR" max="255" oninput="EyeColor(this.value, 0)"  value="0"><br>
 					G<input type="range" name="eyeColorG" max="255" oninput="EyeColor(this.value, 1)"  value="0"><br>
 					B<input type="range" name="eyeColorB" max="255" oninput="EyeColor(this.value, 2)"  value="0"><br>
 				</div><!-- /itemContents -->
 								
-				<div class="itemLabel">”û‚ÌŒ`iŒ`EŠp“xj</div>
+				<div class="itemLabel">çœ‰ã®å½¢ï¼ˆå½¢ãƒ»è§’åº¦ï¼‰</div>
 				<div class="itemContents">
 					<input type="number" name="eyeBrow" min="0" max="2" value="0" style="width:30px;" onchange="Eyebrow(this.value)">
 					<input type="number" name="eyeBrowEx" min="0" max="3" value="0" style="width:30px;" onchange="EyebrowEx(this.value)">
 				</div><!-- /itemContents -->
 
-				<div class="itemLabel">•\î</div>
+				<div class="itemLabel">è¡¨æƒ…</div>
 				<div class="itemContents">
-					<label>–j<input type="checkbox" name="cheek" onchange="Cheek(this.checked)"></label>
-					<label>Œû<select id="mouth" name="mouth" onchange="Mouth(this.value)"></label>
-					<option value="normal">’Êí</option>
-					<option value="open0">”¼ŠJ‚«</option>
-					<option value="open1">ŠJ‚«</option>
-					<option value="smile0">”÷Î</option>
-					<option value="smile1">Î‚Ý</option>
-					<option value="smile2">Î‚Ý2</option>
-					<option value="smile3">Î‚Ý3</option>
+					<label>é ¬<input type="checkbox" name="cheek" onchange="Cheek(this.checked)"></label>
+					<label>å£<select id="mouth" name="mouth" onchange="Mouth(this.value)"></label>
+					<option value="normal">é€šå¸¸</option>
+					<option value="open0">åŠé–‹ã</option>
+					<option value="open1">é–‹ã</option>
+					<option value="smile0">å¾®ç¬‘</option>
+					<option value="smile1">ç¬‘ã¿</option>
+					<option value="smile2">ç¬‘ã¿2</option>
+					<option value="smile3">ç¬‘ã¿3</option>
 					</select>
 				</div><!-- /itemContents -->
 			</div><!-- /item -->
 
 			<div class="item">
-			<div class="itemLabel">Ž¨</div>
+			<div class="itemLabel">è€³</div>
 				<div class="itemContents">
 					<select name="ear" onchange="Ear(this.value)">
-					<option value="">‚È‚µ</option>
-					<option value="normal" selected>’Êí</option>
-					<option value="mecha">‹@ŠB</option>
+					<option value="">ãªã—</option>
+					<option value="normal" selected>é€šå¸¸</option>
+					<option value="mecha">æ©Ÿæ¢°</option>
 					</select>
 				</div><!-- /itemContents -->
 			</div><!-- /item -->
@@ -117,51 +118,51 @@
 
 		<div id="rightWrap">
 			<div class="item">
-				<div class="itemLabel">“û</div>
+				<div class="itemLabel">ä¹³</div>
 				<div class="itemContents">
 				<input type="range" name="breast" max="7" oninput="Breast(this.value)" value="0">
 				</div><!-- /itemContents -->
 			</div><!-- /item -->
 
 			<div class="item">
-				<div class="itemLabel">”§F</div>
+				<div class="itemLabel">è‚Œè‰²</div>
 				<div class="itemContents">
 					<input type="range" name="skin" max="5" oninput="Skin(this.value)" value="5">
 				</div><!-- /itemContents -->
 			</div><!-- /item -->
 
 			<div class="item">
-				<div class="itemLabel">ƒAƒEƒ^[</div>
+				<div class="itemLabel">ã‚¢ã‚¦ã‚¿ãƒ¼</div>
 				<div class="itemContents">
 					<label><select name="outer" onchange="Outer(this.value)">
-						<option value="">‚È‚µ</option>
-						<option value="blazer">ƒuƒŒƒU[</option>
+						<option value="">ãªã—</option>
+						<option value="blazer">ãƒ–ãƒ¬ã‚¶ãƒ¼</option>
 					</select></label>
 
 					<label><input type="number" name="outerSleeve" min="0" max="3" value="1" style="width:30px;" oninput="OuterSleeve(this.value)"></label>
 					<label><input type="number" name="outerHem" min="0" max="3" value="1" style="width:30px;" oninput="OuterHem(this.value)"></label>
 				</div><!-- /itemContents -->
 
-				<div class="itemLabel">ƒgƒbƒv(‘³Ež)</div>
+				<div class="itemLabel">ãƒˆãƒƒãƒ—(è¢–ãƒ»è£¾)</div>
 				<div class="itemContents">
 					<label><select name="top" onchange="Top(this.value)">
-						<option value="">‚È‚µ</option>
-						<option value="sailorB">ƒZ[ƒ‰[(•)</option>
-						<option value="sailorW">ƒZ[ƒ‰[(”’)</option>
-						<option value="shirtW">ƒVƒƒƒc(”’)</option>
+						<option value="">ãªã—</option>
+						<option value="sailorB">ã‚»ãƒ¼ãƒ©ãƒ¼(é»’)</option>
+						<option value="sailorW">ã‚»ãƒ¼ãƒ©ãƒ¼(ç™½)</option>
+						<option value="shirtW">ã‚·ãƒ£ãƒ„(ç™½)</option>
 					</select></label>
 					
 					<label><input type="number" name="sleeve" min="0" max="3" value="1" style="width:30px;" oninput="TopSleeve(this.value)"></label>
 					<label><input type="number" name="hem" min="0" max="3" value="1" style="width:30px;" oninput="TopHem(this.value)"></label>
 				</div><!-- /itemContents -->
 
-				<div class="itemLabel">ƒ{ƒgƒ€(’·‚³)</div>
+				<div class="itemLabel">ãƒœãƒˆãƒ (é•·ã•)</div>
 				<div class="itemContents">
 					<label><select name="bottom" onchange="Bottom(this.value)">
-						<option value="">‚È‚µ</option>
-						<option value="skirtR">ƒvƒŠ[ƒc(Ô)</option>
-						<option value="skirtB">ƒvƒŠ[ƒc(Â)</option>
-						<option value="tight">ƒ^ƒCƒg</option>
+						<option value="">ãªã—</option>
+						<option value="skirtR">ãƒ—ãƒªãƒ¼ãƒ„(èµ¤)</option>
+						<option value="skirtB">ãƒ—ãƒªãƒ¼ãƒ„(é’)</option>
+						<option value="tight">ã‚¿ã‚¤ãƒˆ</option>
 					</select></label>
 
 					<label><input type="number" name="bottomLength" min="-1" max="3" value="1" style="width:30px;" oninput="BottomLength(this.value)"></label>
@@ -170,82 +171,82 @@
 			</div><!-- /item -->
 
 			<div class="item">
-				<div class="itemLabel">ƒCƒ“ƒi[</div>
+				<div class="itemLabel">ã‚¤ãƒ³ãƒŠãƒ¼</div>
 				<div class="itemContents">
 					<label><select name="inner" onchange="Inner(this.value)">
-						<option value="">‚È‚µ</option>
-						<option value="suit">ƒX[ƒc</option>
-						<option value="bodyTights">‘Sgƒ^ƒCƒc</option>
+						<option value="">ãªã—</option>
+						<option value="suit">ã‚¹ãƒ¼ãƒ„</option>
+						<option value="bodyTights">å…¨èº«ã‚¿ã‚¤ãƒ„</option>
 					</select></label>
 				</div><!-- /itemContents -->
 
-				<div class="itemLabel">ƒuƒ‰</div>
+				<div class="itemLabel">ãƒ–ãƒ©</div>
 				<div class="itemContents">
 					<label><select name="bra" onchange="Bra(this.value)">
-						<option value="">‚È‚µ</option>
-						<option value="bra">ƒuƒ‰</option>
+						<option value="">ãªã—</option>
+						<option value="bra">ãƒ–ãƒ©</option>
 					</select></label>
 
 					<label><select name="braColor" onchange="BraColor(this.value)">
-						<option value="W">”’</option>
-						<option value="B">•</option>
+						<option value="W">ç™½</option>
+						<option value="B">é»’</option>
 					</select></label>
 				</div><!-- /itemContents -->
 
-				<div class="itemLabel">ƒpƒ“ƒc</div>
+				<div class="itemLabel">ãƒ‘ãƒ³ãƒ„</div>
 				<div class="itemContents">
 					<label><select name="pants" onchange="Pants(this.value)">
-						<option value="">‚È‚µ</option>
-						<option value="pants">ƒpƒ“ƒc</option>
-						<option value="low">ƒ[ƒŒƒO</option>
-						<option value="spats">ƒXƒpƒbƒc</option>
+						<option value="">ãªã—</option>
+						<option value="pants">ãƒ‘ãƒ³ãƒ„</option>
+						<option value="low">ãƒ­ãƒ¼ãƒ¬ã‚°</option>
+						<option value="spats">ã‚¹ãƒ‘ãƒƒãƒ„</option>
 					</select></label>
 
 					<label><select name="pantsColor" onchange="PantsColor(this.value)">
-						<option value="W">”’</option>
-						<option value="B">•</option>
+						<option value="W">ç™½</option>
+						<option value="B">é»’</option>
 					</select></label>
 				</div><!-- /itemContents -->
 			</div><!-- /item -->
 
 			<div class="item">
-				<div class="itemLabel">‚»‚Ì‘¼</div>
+				<div class="itemLabel">ãã®ä»–</div>
 				<div class="itemContents">
-					<label>ƒwƒbƒh@<select name="acce" onchange="Acce(this.value)">
-						<option value="">‚È‚µ</option>
-						<option value="hairbandB">ƒwƒAƒoƒ“ƒh(•)</option>
-						<option value="hairbandW">ƒwƒAƒoƒ“ƒh(”’)</option>
-						<option value="casquette">ƒLƒƒƒXƒPƒbƒg</option>
+					<label>ãƒ˜ãƒƒãƒ‰ã€€<select name="acce" onchange="Acce(this.value)">
+						<option value="">ãªã—</option>
+						<option value="hairbandB">ãƒ˜ã‚¢ãƒãƒ³ãƒ‰(é»’)</option>
+						<option value="hairbandW">ãƒ˜ã‚¢ãƒãƒ³ãƒ‰(ç™½)</option>
+						<option value="casquette">ã‚­ãƒ£ã‚¹ã‚±ãƒƒãƒˆ</option>
 					</select></label>
 
 					<br>
-					<label>ƒƒKƒl@<select name="glasses" onchange="Glasses(this.value)">
-						<option value="">‚È‚µ</option>
-						<option value="glasses0">ƒƒKƒl</option>
+					<label>ãƒ¡ã‚¬ãƒã€€<select name="glasses" onchange="Glasses(this.value)">
+						<option value="">ãªã—</option>
+						<option value="glasses0">ãƒ¡ã‚¬ãƒ</option>
 					</select></label>
 
 					<br>
-					<label>ƒOƒ[ƒu<select name="glove" onchange="Glove(this.value)">
-						<option value="">‚È‚µ</option>
-						<option value="gloveB0">ƒVƒ‡[ƒg(•)</option>
-						<option value="gloveB1">ƒ~ƒhƒ‹(•)</option>
-						<option value="gloveB2">ƒƒ“ƒO(•)</option>
-						<option value="gloveB3">’´ƒƒ“ƒO(•)</option>
-						<option value="gloveW0">ƒVƒ‡[ƒg(”’)</option>
-						<option value="gloveW1">ƒ~ƒhƒ‹(”’)</option>
-						<option value="gloveW2">ƒƒ“ƒO(”’)</option>
-						<option value="gloveW3">’´ƒƒ“ƒO(”’)</option>
+					<label>ã‚°ãƒ­ãƒ¼ãƒ–<select name="glove" onchange="Glove(this.value)">
+						<option value="">ãªã—</option>
+						<option value="gloveB0">ã‚·ãƒ§ãƒ¼ãƒˆ(é»’)</option>
+						<option value="gloveB1">ãƒŸãƒ‰ãƒ«(é»’)</option>
+						<option value="gloveB2">ãƒ­ãƒ³ã‚°(é»’)</option>
+						<option value="gloveB3">è¶…ãƒ­ãƒ³ã‚°(é»’)</option>
+						<option value="gloveW0">ã‚·ãƒ§ãƒ¼ãƒˆ(ç™½)</option>
+						<option value="gloveW1">ãƒŸãƒ‰ãƒ«(ç™½)</option>
+						<option value="gloveW2">ãƒ­ãƒ³ã‚°(ç™½)</option>
+						<option value="gloveW3">è¶…ãƒ­ãƒ³ã‚°(ç™½)</option>
 					</select></label>
 
 					<br>
-					<label>ƒ\ƒbƒNƒX<select name="socks" onchange="Socks(this.value)">
-						<option value="">‚È‚µ</option>
-						<option value="tights0">ƒ^ƒCƒc</option>
-						<option value="tights1">ƒ^ƒCƒc(”–)</option>
-						<option value="tights2">ƒ^ƒCƒc(”Z)</option>
-						<option value="tightsW">ƒ^ƒCƒc(”’)</option>
-						<option value="nisoB">ƒj[ƒ\(•)</option>
-						<option value="nisoW">ƒj[ƒ\(”’)</option>
+					<label>ã‚½ãƒƒã‚¯ã‚¹<select name="socks" onchange="Socks(this.value)">
+						<option value="">ãªã—</option>
+						<option value="tights0">ã‚¿ã‚¤ãƒ„</option>
+						<option value="tights1">ã‚¿ã‚¤ãƒ„(è–„)</option>
+						<option value="tights2">ã‚¿ã‚¤ãƒ„(æ¿ƒ)</option>
+						<option value="tightsW">ã‚¿ã‚¤ãƒ„(ç™½)</option>
+						<option value="nisoB">ãƒ‹ãƒ¼ã‚½(é»’)</option>
+						<option value="nisoW">ãƒ‹ãƒ¼ã‚½(ç™½)</option>
 					</select></label>
 				</div><!-- /itemContents -->
 			</div><!-- /item -->
@@ -267,21 +268,21 @@
 		custom.formLoad();
 	</script>
 	<div id="bottomWrap">
-	<div class="botoomLabel">XV—š—ð</div>
+	<div class="botoomLabel">æ›´æ–°å±¥æ­´</div>
 		<div class="botoomContents">
-		2016/06/12@ver0.8@ƒÀ”ÅŒöŠJ
+		2016/06/12ã€€ver0.8ã€€Î²ç‰ˆå…¬é–‹
 		</div><!-- /botoomContents -->
-	<div class="botoomLabel">—˜—p•û–@</div>
+	<div class="botoomLabel">åˆ©ç”¨æ–¹æ³•</div>
 		<div class="botoomContents">		
-		uƒJƒXƒ^ƒ€—§‚¿ŠGv‚Å¶¬‚µ‚½‰æ‘œ‚Í‚»‚Ì‚Ü‚Ü‰EƒNƒŠƒbƒN‚Å•Û‘¶‚·‚é‚±‚Æ‚ª‚Å‚«‚Ü‚·B<br>
-		‚Ü‚½A¶¬‚µ‚½‰æ‘œ‚Í‘fÞ‚Æ‚µ‚Ä—˜—p‚·‚é‚±‚Æ‚ª‚Å‚«‚Ü‚·iuRPGƒcƒN[ƒ‹MVv‚Ì—§‚¿ŠG‘fÞ‚È‚ÇjB<br>
-		—˜—p•ñ‚Í•s—v‚Å‚·BƒNƒŒƒWƒbƒg‚ð•\‹L‚·‚éê‡‚Íu‹À’ë•£@ƒJƒXƒ^ƒ€—§‚¿ŠGv‚È‚Ç‚Å‚¨Šè‚¢‚µ‚Ü‚·B<br>
-		Šî–{“I‚É‚È‚É‚ð‚µ‚Ä‚à‚æ‚¢‚Å‚·‚ªA‘fÞ‚ð‚»‚Ì‚Ü‚Ü“]”„‚·‚é‚Æ‚¢‚Á‚½sˆ×‚Í‹ÖŽ~‚µ‚Ü‚·B<br>
+		ã€Œã‚«ã‚¹ã‚¿ãƒ ç«‹ã¡çµµã€ã§ç”Ÿæˆã—ãŸç”»åƒã¯ãã®ã¾ã¾å³ã‚¯ãƒªãƒƒã‚¯ã§ä¿å­˜ã™ã‚‹ã“ã¨ãŒã§ãã¾ã™ã€‚<br>
+		ã¾ãŸã€ç”Ÿæˆã—ãŸç”»åƒã¯ç´ æã¨ã—ã¦åˆ©ç”¨ã™ã‚‹ã“ã¨ãŒã§ãã¾ã™ï¼ˆã€ŒRPGãƒ„ã‚¯ãƒ¼ãƒ«MVã€ã®ç«‹ã¡çµµç´ æãªã©ï¼‰ã€‚<br>
+		åˆ©ç”¨å ±å‘Šã¯ä¸è¦ã§ã™ã€‚ã‚¯ãƒ¬ã‚¸ãƒƒãƒˆã‚’è¡¨è¨˜ã™ã‚‹å ´åˆã¯ã€Œé¥—åº­æ·µã€€ã‚«ã‚¹ã‚¿ãƒ ç«‹ã¡çµµã€ãªã©ã§ãŠé¡˜ã„ã—ã¾ã™ã€‚<br>
+		åŸºæœ¬çš„ã«ãªã«ã‚’ã—ã¦ã‚‚ã‚ˆã„ã§ã™ãŒã€ç´ æã‚’ãã®ã¾ã¾è»¢å£²ã™ã‚‹ã¨ã„ã£ãŸè¡Œç‚ºã¯ç¦æ­¢ã—ã¾ã™ã€‚<br>
 		</div><!-- /botoomContents -->
 	</div><!-- /bottomWrap -->
 
 	<div id="footer">
-		ìŽÒF<a href="http://aeb.iku4.com/">‹À’ë•£</a><br>
+		ä½œè€…ï¼š<a href="http://aeb.iku4.com/">é¥—åº­æ·µ</a><br>
 	</div>
 
 </div><!-- /wrap -->
