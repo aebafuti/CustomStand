@@ -1,0 +1,18 @@
+body { text-align:center;}  
+#header {font:bold 12px monospace;  vertical-align:bottom; }
+#info {}
+#wrap { width:825px; text-align:left; margin:0 auto; background-image:url('background.png'); } 
+#inner { margin:0 10px; padding:10px 0; }
+#largeWrap { width:575px; float:left;}  
+#mainWrap { }  
+#leftWrap { width:240px; float:left; text-align:left; } 
+#rightWrap { width:240px; float:right; text-align:left; } 
+#bottomWrap { width:805px; margin:0 5px; padding:5px; text-align:left; font-size:15px;} 
+#footer {clear:left; text-align:right; font-size:12px; }
+
+.item  {width:230px; margin:5px; float:left; background-color:#ccccff; line-height:200%;}
+.itemLabel {padding: 0px 5px; background-color:#9999FF;}
+.itemContents {padding: 2px 15px; font: 15px monospace;}
+
+.botoomLabel {padding: 5px; font:bold 15px monospace; color:#ffffff; background-image:url('titleback.png');}
+.botoomContents{padding:2px 5px; text-align:left; font-size:13px;}

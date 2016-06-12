@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<META name="GENERATOR" content="IBM WebSphere Homepage Builder V6.0.0 for Windows">
+	<META http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+	<META http-equiv="Content-Style-Type" content="text/css">
+	<meta charset="utf-8">
+	<link rel=stylesheet type="text/css" href="css/custom.css">  
+	<script src="lib/easeljs-0.8.2.min.js"></script>
+	<script src="lib/preloadjs-0.6.2.min.js"></script>
+	<script src="lib/tweenjs-0.6.2.min.js"></script>
+	<title>カスタム立ち絵</title>
+	
+</head>
+<body>
+<div id="wrap"> 
+	<div id="header">
+		カスタム立ち絵　ver0.8
+        </div><!-- /header -->  
+	<div id="inner">
+		<div id="leftWrap">
+			<form name="customForm" id="customForm" action="">
+			<div class="item">
+				<div class="itemLabel">髪型</div>
+				<div class="itemContents">
+					<label>バング<select name="frontHair" onchange="FrontHair(this.value)">
+					<option value="pattun0">パッツン</option>
+					<option value="pattun1">パッツン(短)</option>
+					<option value="pattun2">パッツン(長)</option>
+					<option value="jagi0">ジャギ</option>
+					<option value="jagi1">ジャギ(短)</option>
+					<option value="jagi2">ジャギ(長)</option>
+					</select></label>
+					<br>
+
+					<label>サイド<select name="sideHair" onchange="SideHair(this.value)">
+					<option value="">なし</option>
+					<option value="side0" selected>ストレート</option>
+					<option value="side1">ストレート(短)</option>
+					<option value="side2">ストレート(長)</option>
+					<option value="wave0">ウェーブ</option>
+					<option value="wave2">ウェーブ(長)</option>
+					</select></label>
+					<br>
+
+					<label>バック<select name="backHair" onchange="BackHair(this.value)">
+					<option value="long">ロング</option>
+					<option value="bob">ボブ</option>
+					<option value="pony">ポニーテール</option>
+					<option value="twin">ツインテール</option>
+					</label>
+					</select>
+				</div><!-- /itemContents -->
+						
+				<div class="itemLabel">髪色</div>
+				<div class="itemContents">
+					R<input type="range" name="hairColorR" max="255" oninput="HairColor(this.value, 0)"  value="0"><br>
+					G<input type="range" name="hairColorG" max="255" oninput="HairColor(this.value, 1)"  value="0"><br>
+					B<input type="range" name="hairColorB" max="255" oninput="HairColor(this.value, 2)"  value="0"><br>
+				</div><!-- /itemContents -->
+			</div><!-- /item -->
+	
+			<div class="item">
+				<div class="itemLabel">目（輪郭・瞳・オプション）</div>
+				<div class="itemContents">
+					<input type="number" name="eye" min="0" max="2" value="0" style="width:30px;" onchange="Eye(this.value)">
+					<input type="number" name="pupil" min="0" max="2" value="0" style="width:30px;" onchange="Pupil(this.value)">
+					<select id="pupilOption" name="pupilOption" onchange="PupilOption(this.value)">
+					<option value="">なし</option>
+					<option value="heart">ハート</option>
+					<option value="star">星</option>
+					<option value="kira">しいたけ</option>
+					</select>
+				</div><!-- /itemContents -->
+		
+				<div class="itemLabel">目の色</div>
+				<div class="itemContents">
+					R<input type="range" name="eyeColorR" max="255" oninput="EyeColor(this.value, 0)"  value="0"><br>
+					G<input type="range" name="eyeColorG" max="255" oninput="EyeColor(this.value, 1)"  value="0"><br>
+					B<input type="range" name="eyeColorB" max="255" oninput="EyeColor(this.value, 2)"  value="0"><br>
+				</div><!-- /itemContents -->
+								
+				<div class="itemLabel">眉の形（形・角度）</div>
+				<div class="itemContents">
+					<input type="number" name="eyeBrow" min="0" max="2" value="0" style="width:30px;" onchange="Eyebrow(this.value)">
+					<input type="number" name="eyeBrowEx" min="0" max="3" value="0" style="width:30px;" onchange="EyebrowEx(this.value)">
+				</div><!-- /itemContents -->
+
+				<div class="itemLabel">表情</div>
+				<div class="itemContents">
+					<label>頬<input type="checkbox" name="cheek" onchange="Cheek(this.checked)"></label>
+					<label>口<select id="mouth" name="mouth" onchange="Mouth(this.value)"></label>
+					<option value="normal">通常</option>
+					<option value="open0">半開き</option>
+					<option value="open1">開き</option>
+					<option value="smile0">微笑</option>
+					<option value="smile1">笑み</option>
+					<option value="smile2">笑み2</option>
+					<option value="smile3">笑み3</option>
+					</select>
+				</div><!-- /itemContents -->
+			</div><!-- /item -->
+
+			<div class="item">
+			<div class="itemLabel">耳</div>
+				<div class="itemContents">
+					<select name="ear" onchange="Ear(this.value)">
+					<option value="">なし</option>
+					<option value="normal" selected>通常</option>
+					<option value="mecha">機械</option>
+					</select>
+				</div><!-- /itemContents -->
+			</div><!-- /item -->
+
+			
+		</div><!-- /leftWrap --> 
+
+		<div id="rightWrap">
+			<div class="item">
+				<div class="itemLabel">乳</div>
+				<div class="itemContents">
+				<input type="range" name="breast" max="7" oninput="Breast(this.value)" value="0">
+				</div><!-- /itemContents -->
+			</div><!-- /item -->
+
+			<div class="item">
+				<div class="itemLabel">肌色</div>
+				<div class="itemContents">
+					<input type="range" name="skin" max="5" oninput="Skin(this.value)" value="5">
+				</div><!-- /itemContents -->
+			</div><!-- /item -->
+
+			<div class="item">
+				<div class="itemLabel">アウター</div>
+				<div class="itemContents">
+					<label><select name="outer" onchange="Outer(this.value)">
+						<option value="">なし</option>
+						<option value="blazer">ブレザー</option>
+					</select></label>
+
+					<label><input type="number" name="outerSleeve" min="0" max="3" value="1" style="width:30px;" oninput="OuterSleeve(this.value)"></label>
+					<label><input type="number" name="outerHem" min="0" max="3" value="1" style="width:30px;" oninput="OuterHem(this.value)"></label>
+				</div><!-- /itemContents -->
+
+				<div class="itemLabel">トップ(袖・裾)</div>
+				<div class="itemContents">
+					<label><select name="top" onchange="Top(this.value)">
+						<option value="">なし</option>
+						<option value="sailorB">セーラー(黒)</option>
+						<option value="sailorW">セーラー(白)</option>
+						<option value="shirtW">シャツ(白)</option>
+					</select></label>
+					
+					<label><input type="number" name="sleeve" min="0" max="3" value="1" style="width:30px;" oninput="TopSleeve(this.value)"></label>
+					<label><input type="number" name="hem" min="0" max="3" value="1" style="width:30px;" oninput="TopHem(this.value)"></label>
+				</div><!-- /itemContents -->
+
+				<div class="itemLabel">ボトム(長さ)</div>
+				<div class="itemContents">
+					<label><select name="bottom" onchange="Bottom(this.value)">
+						<option value="">なし</option>
+						<option value="skirtR">プリーツ(赤)</option>
+						<option value="skirtB">プリーツ(青)</option>
+						<option value="tight">タイト</option>
+					</select></label>
+
+					<label><input type="number" name="bottomLength" min="-1" max="3" value="1" style="width:30px;" oninput="BottomLength(this.value)"></label>
+					
+				</div><!-- /itemContents -->
+			</div><!-- /item -->
+
+			<div class="item">
+				<div class="itemLabel">インナー</div>
+				<div class="itemContents">
+					<label><select name="inner" onchange="Inner(this.value)">
+						<option value="">なし</option>
+						<option value="suit">スーツ</option>
+						<option value="bodyTights">全身タイツ</option>
+					</select></label>
+				</div><!-- /itemContents -->
+
+				<div class="itemLabel">ブラ</div>
+				<div class="itemContents">
+					<label><select name="bra" onchange="Bra(this.value)">
+						<option value="">なし</option>
+						<option value="bra">ブラ</option>
+					</select></label>
+
+					<label><select name="braColor" onchange="BraColor(this.value)">
+						<option value="W">白</option>
+						<option value="B">黒</option>
+					</select></label>
+				</div><!-- /itemContents -->
+
+				<div class="itemLabel">パンツ</div>
+				<div class="itemContents">
+					<label><select name="pants" onchange="Pants(this.value)">
+						<option value="">なし</option>
+						<option value="pants">パンツ</option>
+						<option value="low">ローレグ</option>
+						<option value="spats">スパッツ</option>
+					</select></label>
+
+					<label><select name="pantsColor" onchange="PantsColor(this.value)">
+						<option value="W">白</option>
+						<option value="B">黒</option>
+					</select></label>
+				</div><!-- /itemContents -->
+			</div><!-- /item -->
+
+			<div class="item">
+				<div class="itemLabel">その他</div>
+				<div class="itemContents">
+					<label>ヘッド　<select name="acce" onchange="Acce(this.value)">
+						<option value="">なし</option>
+						<option value="hairbandB">ヘアバンド(黒)</option>
+						<option value="hairbandW">ヘアバンド(白)</option>
+						<option value="casquette">キャスケット</option>
+					</select></label>
+
+					<br>
+					<label>メガネ　<select name="glasses" onchange="Glasses(this.value)">
+						<option value="">なし</option>
+						<option value="glasses0">メガネ</option>
+					</select></label>
+
+					<br>
+					<label>グローブ<select name="glove" onchange="Glove(this.value)">
+						<option value="">なし</option>
+						<option value="gloveB0">ショート(黒)</option>
+						<option value="gloveB1">ミドル(黒)</option>
+						<option value="gloveB2">ロング(黒)</option>
+						<option value="gloveB3">超ロング(黒)</option>
+						<option value="gloveW0">ショート(白)</option>
+						<option value="gloveW1">ミドル(白)</option>
+						<option value="gloveW2">ロング(白)</option>
+						<option value="gloveW3">超ロング(白)</option>
+					</select></label>
+
+					<br>
+					<label>ソックス<select name="socks" onchange="Socks(this.value)">
+						<option value="">なし</option>
+						<option value="tights0">タイツ</option>
+						<option value="tights1">タイツ(薄)</option>
+						<option value="tights2">タイツ(濃)</option>
+						<option value="tightsW">タイツ(白)</option>
+						<option value="nisoB">ニーソ(黒)</option>
+						<option value="nisoW">ニーソ(白)</option>
+					</select></label>
+				</div><!-- /itemContents -->
+			</div><!-- /item -->
+
+
+			
+		</div><!-- /rightWrap -->
+
+		<div id="mainWrap">
+			<canvas id="canvas" width="325" height="624"></canvas>
+			<script type="text/javascript" src="js/custom.js"></script>
+		</div><!-- /mainWrap --> 
+	<div class="clear"></div> 
+		 
+	</div><!-- /inner -->
+	</form>
+	<div class="clear"><br></div> 
+	<script type="text/javascript">
+		custom.formLoad();
+	</script>
+	<div id="bottomWrap">
+	<div class="botoomLabel">更新履歴</div>
+		<div class="botoomContents">
+		2016/06/12　ver0.8　β版公開
+		</div><!-- /botoomContents -->
+	<div class="botoomLabel">利用方法</div>
+		<div class="botoomContents">		
+		「カスタム立ち絵」で生成した画像はそのまま右クリックで保存することができます。<br>
+		また、生成した画像は素材として利用することができます（「RPGツクールMV」の立ち絵素材など）。<br>
+		利用報告は不要です。クレジットを表記する場合は「饗庭淵　カスタム立ち絵」などでお願いします。<br>
+		基本的になにをしてもよいですが、素材をそのまま転売するといった行為は禁止します。<br>
+		</div><!-- /botoomContents -->
+	</div><!-- /bottomWrap -->
+
+	<div id="footer">
+		作者：<a href="http://aeb.iku4.com/">饗庭淵</a><br>
+	</div>
+
+</div><!-- /wrap -->
+	
+
+</body>
+</html>
