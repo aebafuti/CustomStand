@@ -17,6 +17,7 @@ Custom.prototype.initialize = function() {
 	this.manifest = [
 			{src: 'image/00_bob.png', 		id: 'bob'},
 			{src: 'image/00_long.png', 		id: 'long'},
+			{src: 'image/00_semilong.png', 		id: 'semilong'},
 			{src: 'image/00_twin.png', 		id: 'twin'},
 			{src: 'image/00_pony.png', 		id: 'pony'},
 			{src: 'image/00_ponyC.png', 		id: 'ponyC'},
@@ -27,14 +28,14 @@ Custom.prototype.initialize = function() {
 			{src: 'image/06_base_hl.png', 				id: 'base_hl'},
 			{src: 'image/07_suit.png', 				id: 'suit'},
 			{src: 'image/07_bodyTights.png', 				id: 'bodyTights'},
-			{src: 'image/08_gloveB0.png', 				id: 'gloveB0'},
-			{src: 'image/08_gloveB1.png', 				id: 'gloveB1'},
-			{src: 'image/08_gloveB2.png', 				id: 'gloveB2'},
-			{src: 'image/08_gloveB3.png', 				id: 'gloveB3'},
-			{src: 'image/08_gloveW0.png', 				id: 'gloveW0'},
-			{src: 'image/08_gloveW1.png', 				id: 'gloveW1'},
-			{src: 'image/08_gloveW2.png', 				id: 'gloveW2'},
-			{src: 'image/08_gloveW3.png', 				id: 'gloveW3'},
+			{src: 'image/08_gloveB0.png', 				id: 'glove0B'},
+			{src: 'image/08_gloveB1.png', 				id: 'glove1B'},
+			{src: 'image/08_gloveB2.png', 				id: 'glove2B'},
+			{src: 'image/08_gloveB3.png', 				id: 'glove3B'},
+			{src: 'image/08_gloveW0.png', 				id: 'glove0W'},
+			{src: 'image/08_gloveW1.png', 				id: 'glove1W'},
+			{src: 'image/08_gloveW2.png', 				id: 'glove2W'},
+			{src: 'image/08_gloveW3.png', 				id: 'glove3W'},
 			{src: 'image/09_sailorW0.png', 				id: 'sleeve_sailorW0'},
 			{src: 'image/09_sailorW1.png', 				id: 'sleeve_sailorW1'},
 			{src: 'image/09_sailorW2.png', 				id: 'sleeve_sailorW2'},
@@ -53,16 +54,22 @@ Custom.prototype.initialize = function() {
 			{src: 'image/10_blazer3.png', 				id: 'sleeve_blazer3'},
 			{src: 'image/11_lowB.png', 					id: 'lowB'},
 			{src: 'image/11_lowW.png', 					id: 'lowW'},
+			{src: 'image/11_highB.png', 					id: 'highB'},
+			{src: 'image/11_highW.png', 					id: 'highW'},
 			{src: 'image/11_pantsB.png', 				id: 'pantsB'},
 			{src: 'image/11_pantsW.png', 				id: 'pantsW'},
 			{src: 'image/11_spatsB.png', 				id: 'spatsB'},
 			{src: 'image/11_spatsW.png', 				id: 'spatsW'},
-			{src: 'image/12_tights0.png', 				id: 'tights0'},
-			{src: 'image/12_tights1.png', 				id: 'tights1'},
-			{src: 'image/12_tights2.png', 				id: 'tights2'},
-			{src: 'image/12_tightsW.png', 				id: 'tightsW'},
+			
+			{src: 'image/12_tightsB0.png', 				id: 'tights0B'},
+			{src: 'image/12_tightsB1.png', 				id: 'tights1B'},
+			{src: 'image/12_tightsB2.png', 				id: 'tights2B'},
+			{src: 'image/12_tightsW0.png', 				id: 'tights0W'},
+			{src: 'image/12_tightsW1.png', 				id: 'tights1W'},
+			{src: 'image/12_tightsW2.png', 				id: 'tights2W'},
 			{src: 'image/12_nisoB.png', 				id: 'nisoB'},
 			{src: 'image/12_nisoW.png', 				id: 'nisoW'},
+			
 			{src: 'image/13_skirtR-1.png', 				id: 'skirtR-1'},
 			{src: 'image/13_skirtR0.png', 				id: 'skirtR0'},
 			{src: 'image/13_skirtR1.png', 				id: 'skirtR1'},
@@ -73,11 +80,20 @@ Custom.prototype.initialize = function() {
 			{src: 'image/13_skirtB1.png', 				id: 'skirtB1'},
 			{src: 'image/13_skirtB2.png', 				id: 'skirtB2'},
 			{src: 'image/13_skirtB3.png', 				id: 'skirtB3'},
+			{src: 'image/13_skirtBu0.png', 				id: 'skirtBu0'},
+			{src: 'image/13_skirtBu1.png', 				id: 'skirtBu1'},
+			{src: 'image/13_skirtBu2.png', 				id: 'skirtBu2'},
+			{src: 'image/13_skirtBu3.png', 				id: 'skirtBu3'},
 			{src: 'image/13_tight-1.png', 				id: 'tight-1'},
 			{src: 'image/13_tight0.png', 				id: 'tight0'},
 			{src: 'image/13_tight1.png', 				id: 'tight1'},
 			{src: 'image/13_tight2.png', 				id: 'tight2'},
 			{src: 'image/13_tight3.png', 				id: 'tight3'},
+			{src: 'image/13_jeans-1.png', 				id: 'jeans-1'},
+			{src: 'image/13_jeans0.png', 				id: 'jeans0'},
+			{src: 'image/13_jeans1.png', 				id: 'jeans1'},
+			{src: 'image/13_jeans2.png', 				id: 'jeans2'},
+			{src: 'image/13_jeans3.png', 				id: 'jeans3'},
 			{src: 'image/14_sailorW0.png', 				id: 'hem_sailorW0'},
 			{src: 'image/14_sailorW1.png', 				id: 'hem_sailorW1'},
 			{src: 'image/14_sailorW2.png', 				id: 'hem_sailorW2'},
@@ -187,6 +203,7 @@ Custom.prototype.initialize = function() {
 			{src: 'image/30_hairshadow_jagi0.png', 	id: 'hairshadow_jagi0'},
 			{src: 'image/30_hairshadow_jagi1.png', 	id: 'hairshadow_jagi1'},
 			{src: 'image/30_hairshadow_jagi2.png', 	id: 'hairshadow_jagi2'},
+			{src: 'image/30_hairshadow_naname.png', 	id: 'hairshadow_naname'},
 			{src: 'image/31_cheek.png', 	id: 'cheek'},
 			{src: 'image/32_eye.png', 			id: 'eye'},
 			{src: 'image/33_pupil0.png', 			id: 'pupil0'},
@@ -217,25 +234,38 @@ Custom.prototype.initialize = function() {
 			{src: 'image/37_mouth_smile3.png', 		id: 'smile3'},
 			{src: 'image/37_mouth_open0.png', 		id: 'open0'},
 			{src: 'image/37_mouth_open1.png', 		id: 'open1'},
-			{src: 'image/38_glasses0.png', 		id: 'glasses0'},
+			{src: 'image/38_glasses0R.png', 		id: 'glasses0R'},
+			{src: 'image/38_glasses0B.png', 		id: 'glasses0B'},
+			{src: 'image/38_glasses0W.png', 		id: 'glasses0W'},
+			{src: 'image/39_ear_mecha.png', 	id: 'ear_mecha'},
+			{src: 'image/39_ear_normal.png', 		id: 'ear_normal'},
+			{src: 'image/39_ear_antenna.png', 		id: 'ear_antenna'},
 			
-			{src: 'image/40_ear_mecha.png', 	id: 'ear_mecha'},
-			{src: 'image/40_ear_normal.png', 		id: 'ear_normal'},
+			{src: 'image/40_collarB.png', 	id: 'collarB'},
+			{src: 'image/40_collarW.png', 	id: 'collarW'},
+			{src: 'image/40_collarR.png', 	id: 'collarR'},
+			{src: 'image/40_mufflerB.png', 	id: 'mufflerB'},
+			{src: 'image/40_mufflerW.png', 	id: 'mufflerW'},
+			{src: 'image/40_mufflerR.png', 	id: 'mufflerR'},
 			{src: 'image/42_pattun0.png', 	id: 'pattun0'},
 			{src: 'image/42_pattun1.png', 		id: 'pattun1'},
 			{src: 'image/42_pattun2.png', 		id: 'pattun2'},
 			{src: 'image/42_jagi0.png', 		id: 'jagi0'},
 			{src: 'image/42_jagi1.png', 		id: 'jagi1'},
 			{src: 'image/42_jagi2.png', 		id: 'jagi2'},
+			{src: 'image/42_naname.png', 		id: 'naname'},
 			{src: 'image/43_side0.png', 		id: 'side0'},
 			{src: 'image/43_side1.png', 		id: 'side1'},
 			{src: 'image/43_side2.png', 		id: 'side2'},
 			{src: 'image/43_wave0.png', 		id: 'wave0'},
 			{src: 'image/43_wave2.png', 		id: 'wave2'},
+			{src: 'image/44_headphone.png', 		id: 'headphone'},
 			{src: 'image/45_hairbandB.png', 		id: 'hairbandB'},
 			{src: 'image/45_hairbandW.png', 		id: 'hairbandW'},
-			{src: 'image/44_casquette.png', 		id: 'shadow_casquette'},
-			{src: 'image/45_casquette.png', 		id: 'casquette'},
+			{src: 'image/45_hairbandK.png', 		id: 'hairbandK'},
+			{src: 'image/45_casquetteB.png', 		id: 'casquetteB'},
+			{src: 'image/45_casquetteW.png', 		id: 'casquetteW'},
+			{src: 'image/45_casquetteK.png', 		id: 'casquetteK'},
 	  	];
 
 	this.preload = new createjs.LoadQueue();
@@ -274,8 +304,6 @@ Custom.prototype.initialize = function() {
 			under:'',
 			pants:'',
 			pantsColor:'',
-			socks:'',
-			glove:'',
 			bra:'',
 			braColor:'',
 			bottom:'',
@@ -284,8 +312,17 @@ Custom.prototype.initialize = function() {
 			sleeve:'1',
 			hem:'1',
 			glasses:'',
-			acce:'',
+			glassesColor:'',
+			head:'',
+			headsColor:'',
 			cap:'',
+			neck:'',
+			neckColor:'',
+			glove:'',
+			gloveColor:'',
+			socks:'',
+			socksColor:'',
+			
 		};
 };
 
@@ -311,7 +348,7 @@ Custom.prototype.formLoad = function (){
 	this.data.eyebrowEx = String(document.forms.customForm.eyeBrowEx.value);
 	
 	this.data.breast = String(document.forms.customForm.breast.value);
-	SkinColor(document.forms.customForm.skin.value);
+	this.skinColor(document.forms.customForm.skin.value);
 	this.data.ear = document.forms.customForm.ear.value;
 	
 	this.data.outer =  document.forms.customForm.outer.value;
@@ -331,10 +368,16 @@ Custom.prototype.formLoad = function (){
 	this.data.bra = document.forms.customForm.bra.value;
 	this.data.braColor =  document.forms.customForm.braColor.value;
 	
-	this.data.acce = document.forms.customForm.acce.value;
+	this.data.head = document.forms.customForm.head.value;
+	this.data.headColor = document.forms.customForm.headColor.value;
+	this.data.neck = document.forms.customForm.neck.value;
+	this.data.neckColor = document.forms.customForm.neckColor.value;
 	this.data.glasses = document.forms.customForm.glasses.value;
-	this.data.socks = document.forms.customForm.socks.value;
+	this.data.glassesColor = document.forms.customForm.glassesColor.value;
 	this.data.glove = document.forms.customForm.glove.value;
+	this.data.gloveColor = document.forms.customForm.gloveColor.value;
+	this.data.socks = document.forms.customForm.socks.value;
+	this.data.socksColor = document.forms.customForm.socksColor.value;
 	
 	this.preload.addEventListener("complete",function(event){
 		custom.layer[0] = new createjs.Bitmap(custom.images[custom.data.back + custom.data.cap]);
@@ -344,11 +387,11 @@ Custom.prototype.formLoad = function (){
 		custom.layer[6] = new createjs.Bitmap(custom.images['base_hl']);
 		custom.layer[6].compositeOperation ='lighter';
 		custom.layer[7] = new createjs.Bitmap(custom.images[custom.data.inner]);
-		custom.layer[8] = new createjs.Bitmap(custom.images[custom.data.glove]);
+		custom.layer[8] = new createjs.Bitmap(custom.images[custom.data.glove + custom.data.gloveColor]);
 		custom.layer[9] = new createjs.Bitmap(custom.images['sleeve_' + custom.data.top + custom.data.sleeve]);
 		custom.layer[10] = new createjs.Bitmap(custom.images['sleeve_' + custom.data.outer + custom.data.outerSleeve]);
 		custom.layer[11] = new createjs.Bitmap(custom.images[custom.data.pants + custom.data.pantsColor]);
-		custom.layer[12] = new createjs.Bitmap(custom.images[custom.data.socks]);
+		custom.layer[12] = new createjs.Bitmap(custom.images[custom.data.socks + custom.data.socksColor]);
 		custom.layer[13] = new createjs.Bitmap(custom.images[custom.data.bottom + custom.data.bottomLength]);
 		custom.layer[14] = new createjs.Bitmap(custom.images['hem_' + custom.data.top + custom.data.hem]);
 		custom.layer[15] = new createjs.Bitmap(custom.images['hem_' + custom.data.outer + custom.data.outerHem]);
@@ -371,14 +414,16 @@ Custom.prototype.formLoad = function (){
 		custom.layer[35] = new createjs.Bitmap(custom.images['eyelashes' + custom.data.eyelashes]);
 		custom.layer[36] = new createjs.Bitmap(custom.images['eyebrow' + custom.data.eyebrow + '_' + custom.data.eyebrowEx]);
 		custom.layer[37] = new createjs.Bitmap(custom.images[custom.data.mouth]);
-		custom.layer[38] = new createjs.Bitmap(custom.images[custom.data.glasses]);
+		custom.layer[38] = new createjs.Bitmap(custom.images[custom.data.glasses + custom.data.glassesColor]);
+		custom.layer[39] = new createjs.Bitmap(custom.images['ear_' + custom.data.ear]);
 		
-		custom.layer[40] = new createjs.Bitmap(custom.images['ear_' + custom.data.ear]);
+		custom.layer[40] = new createjs.Bitmap(custom.images[custom.data.neck + custom.data.neckColor]);
 		custom.layer[42] = new createjs.Bitmap(custom.images[custom.data.front]);
 		custom.layer[43] = new createjs.Bitmap(custom.images[custom.data.side]);
-		//custom.layer[44] = new createjs.Bitmap(custom.images['shadow_' + custom.data.acce]);
+		custom.layer[44] = new createjs.Bitmap(custom.images[custom.data.ear]);
+		//custom.layer[44] = new createjs.Bitmap(custom.images['shadow_' + custom.data.head]);
 		//custom.layer[44].compositeOperation = 'darker';
-		custom.layer[45] = new createjs.Bitmap(custom.images[custom.data.acce]);
+		custom.layer[45] = new createjs.Bitmap(custom.images[custom.data.head + custom.data.headColor]);
 		
 		for(var i=0; i<custom.layer.length; i++){
 			if(custom.layer[i]){
@@ -400,12 +445,12 @@ Custom.prototype.update = function (){
 	this.layer[1].image = this.images['back_' + this.data.outer];
 	
 	this.layer[7].image = this.images[this.data.inner];
-	this.layer[8].image = this.images[this.data.glove];
+	this.layer[8].image = this.images[this.data.glove + this.data.gloveColor];
 	this.layer[9].image = this.images['sleeve_' + this.data.top + this.data.sleeve];
 	this.layer[10].image = this.images['sleeve_' + this.data.outer + this.data.outerSleeve];
 	
 	this.layer[11].image = this.images[this.data.pants + this.data.pantsColor];
-	this.layer[12].image = this.images[this.data.socks];
+	this.layer[12].image = this.images[this.data.socks + this.data.socksColor];
 	this.layer[13].image = this.images[this.data.bottom + this.data.bottomLength];
 	this.layer[14].image = this.images['hem_' +this.data.top + this.data.hem];
 	this.layer[15].image = this.images['hem_' + this.data.outer + this.data.outerHem];
@@ -424,28 +469,30 @@ Custom.prototype.update = function (){
 	this.layer[35].image = this.images['eyelashes' + this.data.eyelashes];
 	this.layer[36].image = this.images['eyebrow' + this.data.eyebrow + '_' + this.data.eyebrowEx];
 	this.layer[37].image = this.images[this.data.mouth];
-	this.layer[38].image = this.images[this.data.glasses];
+	this.layer[38].image = this.images[this.data.glasses + this.data.glassesColor];
+	this.layer[39].image = this.images['ear_' + this.data.ear];
 	
-	this.layer[40].image = this.images['ear_' + this.data.ear];
+	this.layer[40].image = this.images[this.data.neck + this.data.neckColor];
 	this.layer[42].image = this.images[this.data.front];
 	this.layer[43].image = this.images[this.data.side];
-	//this.layer[44].image = this.images['shadow_' + this.data.acce];
-	this.layer[45].image = this.images[this.data.acce];
+	//this.layer[44].image = this.images['shadow_' + this.data.head];
+	this.layer[44].image = this.images[this.data.ear];
+	this.layer[45].image = this.images[this.data.head + this.data.headColor];
 	
-	this.ChangeEyeColor();
-	this.ChangeHairColor();
-	this.ChangeSkinColor();
+	this.changeEyeColor();
+	this.changeHairColor();
+	this.changeSkinColor();
 };
 
 Custom.prototype.cap = function(){
-	if((this.data.acce === 'casquette') && (this.data.back === 'pony')){
+	if((this.data.head === 'casquette') && (this.data.back === 'pony')){
 		this.data.cap = 'C';
 	}else{
 		this.data.cap = '';
 	}
 };
 
-Custom.prototype.ChangeHairColor = function(){
+Custom.prototype.changeHairColor = function(){
 	var array = [0, 35, 36, 42, 43];
 	for(var i = 0; i < array.length; i++){
 		this.layer[array[i]].filters = [new createjs.ColorFilter(this.data.hairColor[0], this.data.hairColor[1], this.data.hairColor[2], 1)];
@@ -453,217 +500,259 @@ Custom.prototype.ChangeHairColor = function(){
 	};
 };
 
-Custom.prototype.ChangeEyeColor = function(){
+Custom.prototype.changeEyeColor = function(){
 	this.layer[33].filters = [new createjs.ColorFilter(this.data.eyeColor[0], this.data.eyeColor[1], this.data.eyeColor[2], 1)];
 	this.layer[33].cache(0,0,this.width,this.height);
 };
 
-Custom.prototype.ChangeSkinColor = function(){
-	var array = [5, 20, 30, 40];
+Custom.prototype.changeSkinColor = function(){
+	var array = [5, 20, 30, 39];
 	for(var i = 0; i < array.length; i++){
-		if(i === 30 && this.data.ear === 'mecha'){ continue; }
+		if(i === 39 && this.data.ear === 'mecha'){ continue; }
 		this.layer[array[i]].filters = [new createjs.ColorFilter(this.data.skinColor[0], this.data.skinColor[1], this.data.skinColor[2], 1)];
 		this.layer[array[i]].cache(0,0,this.width,this.height);
 	};
 };
 
-var custom = new Custom();
+Custom.prototype.save = function(){
+	this.canvas.toBlob(
+        function ( blob ) {
+            saveAs( blob, 'custom');
+        },
+        "image/png"
+    );
+};
 
-function select(value, type){
-	console.log(type)
-	type = value;
-	custom.update();
-}
+Custom.prototype.select = function(value, name){
+	name = value;
+	this.update();
+};
 
+Custom.prototype.color = function(value, type, name){
+	name = value;
+	this.update();
+};
 
-function BackHair(type){
-	custom.data.back = type;
-	custom.update();
-}
+Custom.prototype.backHair = function(value){
+	this.data.back = value;
+	this.update();
+};
 
-function FrontHair(type){
-	custom.data.front  = type;
-	custom.update();
-}
+Custom.prototype.frontHair = function(value){
+	this.data.front  = value;
+	this.update();
+};
 
-function SideHair(type){
-	custom.data.side  = type;
-	custom.update();
-}
+Custom.prototype.sideHair = function(value){
+	this.data.side  = value;
+	this.update();
+};
 
-function HairColor(color, type){
-	custom.data.hairColor[type]  = color / 128;
-	custom.update();
-}
+Custom.prototype.hairColor = function(color, type){
+	this.data.hairColor[type]  = color / 128;
+	this.update();
+};
 
-function Eye(value){
-	custom.data.eyelashes = String(value);
-	custom.update();
-}	
+Custom.prototype.eye = function(value){
+	this.data.eyelashes = String(value);
+	this.update();
+};
 
-function Pupil(value){
-	custom.data.pupil = String(value);
-	custom.update();
-}
+Custom.prototype.pupil = function(value){
+	this.data.pupil = String(value);
+	this.update();
+};
 
-function PupilOption(value){
-	custom.data.pupilOption = String(value);
-	custom.update();
-}
+Custom.prototype.pupilOption = function(value){
+	this.data.pupilOption = String(value);
+	this.update();
+};
 
-function EyeColor(color, type){
-	custom.data.eyeColor[type]  = color / 128;
-	custom.update();
-}
+Custom.prototype.eyeColor = function(color, type){
+	this.data.eyeColor[type]  = color / 128;
+	this.update();
+};
 
-function EyebrowEx(value){
-	custom.data.eyebrowEx = String(value);
-	custom.update();
-}
+Custom.prototype.eyebrowEx = function(value){
+	this.data.eyebrowEx = String(value);
+	this.update();
+};
 
-function Eyebrow(value){
-	custom.data.eyebrow = String(value);
-	custom.update();
-}
+Custom.prototype.eyebrow = function(value){
+	this.data.eyebrow = String(value);
+	this.update();
+};
 
-function Cheek(checked){
-	checked ? custom.data.cheek = 'cheek' : custom.data.cheek = '';
-	custom.update();
-}
+Custom.prototype.cheek = function(checked){
+	checked ? this.data.cheek = 'cheek' : this.data.cheek = '';
+	this.update();
+};
 
-function Mouth(value){
-	custom.data.mouth = value;
-	custom.update();
-}
+Custom.prototype.mouth = function(value){
+	this.data.mouth = value;
+	this.update();
+};
 
-function Breast(value){
-	custom.data.breast = String(value);
-	custom.update();
-}
+Custom.prototype.breast = function(value){
+	this.data.breast = String(value);
+	this.update();
+};
 
-function Skin(value){
-	SkinColor(value);
-	custom.update();
-}
+Custom.prototype.skin = function(value){
+	this.skinColor(value);
+	this.update();
+};
 
-function SkinColor(value){
+Custom.prototype.skinColor = function(value){
 	switch (Number(value)){
 	case 0:
-		custom.data.skinColor = [0.5, 0.3, 0.2];
+		this.data.skinColor = [0.5, 0.3, 0.2];
 		break;
 	case 1:
-		custom.data.skinColor = [0.7, 0.5, 0.4];
+		this.data.skinColor = [0.7, 0.5, 0.4];
 		break;
 	case 2:
-		custom.data.skinColor = [0.8, 0.6, 0.5];
+		this.data.skinColor = [0.8, 0.6, 0.5];
 		break;
 	case 3:
-		custom.data.skinColor = [0.9, 0.75, 0.65];
+		this.data.skinColor = [0.9, 0.75, 0.65];
 		break;
 	case 4:
-		custom.data.skinColor = [1.0, 0.9, 0.8];
+		this.data.skinColor = [1.0, 0.9, 0.8];
 		break;
 	case 5:
-		custom.data.skinColor = [1.0, 1.0, 1.0];
+		this.data.skinColor = [1.0, 1.0, 1.0];
 		break;
 	}
 }
 
-function Ear(value){
-	custom.data.ear = value;
-	custom.update();
-}
+Custom.prototype.ear = function(value){
+	this.data.ear = value;
+	this.update();
+};
 
-function Outer(value){
-	custom.data.outer = value;
-	custom.update();
-}
+Custom.prototype.outer = function(value){
+	this.data.outer = value;
+	this.update();
+};
 
-function OuterSleeve(value){
-	custom.data.outerSleeve = value;
-	custom.update();
-}
+Custom.prototype.outerSleeve = function(value){
+	this.data.outerSleeve = value;
+	this.update();
+};
 
-function OuterHem(value){
-	custom.data.outerHem = value;
-	custom.update();
-}
+Custom.prototype.outerHem = function(value){
+	this.data.outerHem = value;
+	this.update();
+};
 
-function Top(value){
-	custom.data.top = value;
-	custom.update();
-}
+Custom.prototype.top = function(value){
+	this.data.top = value;
+	this.update();
+};
 
-function TopSleeve(value){
-	custom.data.sleeve = value;
-	custom.update();
-}
+Custom.prototype.topSleeve = function(value){
+	this.data.sleeve = value;
+	this.update();
+};
 
-function TopHem(value){
-	custom.data.hem = value;
-	custom.update();
-}
+Custom.prototype.topHem = function(value){
+	this.data.hem = value;
+	this.update();
+};
 
-function Bottom(value){
-	custom.data.bottom = value;
-	custom.update();
-}
+Custom.prototype.bottom = function(value){
+	this.data.bottom = value;
+	this.update();
+};
 
-function BottomLength(value){
-	custom.data.bottomLength = value;
-	custom.update();
-}
+Custom.prototype.bottomLength = function(value){
+	this.data.bottomLength = value;
+	this.update();
+};
 
-function Inner(value){
-	custom.data.inner = value;
-	custom.update();
-}
+Custom.prototype.inner = function(value){
+	this.data.inner = value;
+	this.update();
+};
 
-function Under(value){
-	custom.data.under = value;
-	custom.update();
-}
+Custom.prototype.under = function(value){
+	this.data.under = value;
+	this.update();
+};
+
+Custom.prototype.pants = function(value){
+	this.data.pants = value;
+	this.update();
+};
+
+Custom.prototype.pantsColor = function(value){
+	this.data.pantsColor = value;
+	this.update();
+};
+
+Custom.prototype.bra = function(value){
+	this.data.bra = value;
+	this.update();
+};
+
+Custom.prototype.braColor = function(value){
+	this.data.braColor = value;
+	this.update();
+};
+
+Custom.prototype.head = function(value){
+	this.data.head = value;
+	this.update();
+};
+
+Custom.prototype.headColor = function(value){
+	this.data.headColor = value;
+	this.update();
+};
+
+Custom.prototype.neck = function(value){
+	this.data.neck = value;
+	this.update();
+};
+
+Custom.prototype.neckColor = function(value){
+	this.data.neckColor = value;
+	this.update();
+};
+
+Custom.prototype.glasses = function(value){
+	this.data.glasses = value;
+	this.update();
+};
+
+Custom.prototype.glassesColor = function(value){
+	this.data.glassesColor = value;
+	this.update();
+};
 
 
-function Pants(value){
-	custom.data.pants = value;
-	custom.update();
-}
+Custom.prototype.glove = function(value){
+	this.data.glove = value;
+	this.update();
+};
 
-function PantsColor(value){
-	custom.data.pantsColor = value;
-	custom.update();
-}
+Custom.prototype.gloveColor = function(value){
+	this.data.glovesColor = value;
+	this.update();
+};
 
-function Bra(value){
-	custom.data.bra = value;
-	custom.update();
-}
+Custom.prototype.socks = function(value){
+	this.data.socks = value;
+	this.update();
+};
 
-function BraColor(value){
-	custom.data.braColor = value;
-	custom.update();
-}
+Custom.prototype.socksColor = function(value){
+	this.data.socksColor = value;
+	this.update();
+};
 
-function Acce(value){
-	custom.data.acce = value;
-	custom.update();
-}
-
-function Glasses(value){
-	custom.data.glasses = value;
-	custom.update();
-}
-
-function Glove(value){
-	custom.data.glove = value;
-	custom.update();
-}
-
-function Socks(value){
-	custom.data.socks = value;
-	custom.update();
-}
+var custom = new Custom();
 
 createjs.Ticker.setFPS(10);
 createjs.Ticker.addEventListener("tick", function() {
