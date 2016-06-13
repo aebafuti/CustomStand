@@ -80,6 +80,7 @@ Custom.prototype.initialize = function() {
 			{src: 'image/13_skirtB1.png', 				id: 'skirtB1'},
 			{src: 'image/13_skirtB2.png', 				id: 'skirtB2'},
 			{src: 'image/13_skirtB3.png', 				id: 'skirtB3'},
+			{src: 'image/13_skirtBu-1.png', 				id: 'skirtBu-1'},
 			{src: 'image/13_skirtBu0.png', 				id: 'skirtBu0'},
 			{src: 'image/13_skirtBu1.png', 				id: 'skirtBu1'},
 			{src: 'image/13_skirtBu2.png', 				id: 'skirtBu2'},
@@ -738,7 +739,7 @@ Custom.prototype.glove = function(value){
 };
 
 Custom.prototype.gloveColor = function(value){
-	this.data.glovesColor = value;
+	this.data.gloveColor = value;
 	this.update();
 };
 
