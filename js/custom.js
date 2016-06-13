@@ -260,7 +260,7 @@ Custom.prototype.initialize = function() {
 			{src: 'image/43_side2.png', 		id: 'side2'},
 			{src: 'image/43_wave0.png', 		id: 'wave0'},
 			{src: 'image/43_wave2.png', 		id: 'wave2'},
-			{src: 'image/44_headphone.png', 		id: 'headphone'},
+			{src: 'image/44_headphone.png', 		id: 'earmuff_headphone'},
 			{src: 'image/45_hairbandB.png', 		id: 'hairbandB'},
 			{src: 'image/45_hairbandW.png', 		id: 'hairbandW'},
 			{src: 'image/45_hairbandK.png', 		id: 'hairbandK'},
@@ -421,7 +421,7 @@ Custom.prototype.formLoad = function (){
 		custom.layer[40] = new createjs.Bitmap(custom.images[custom.data.neck + custom.data.neckColor]);
 		custom.layer[42] = new createjs.Bitmap(custom.images[custom.data.front]);
 		custom.layer[43] = new createjs.Bitmap(custom.images[custom.data.side]);
-		custom.layer[44] = new createjs.Bitmap(custom.images[custom.data.ear]);
+		custom.layer[44] = new createjs.Bitmap(custom.images['earmuff_' + custom.data.ear]);
 		//custom.layer[44] = new createjs.Bitmap(custom.images['shadow_' + custom.data.head]);
 		//custom.layer[44].compositeOperation = 'darker';
 		custom.layer[45] = new createjs.Bitmap(custom.images[custom.data.head + custom.data.headColor]);
@@ -477,7 +477,7 @@ Custom.prototype.update = function (){
 	this.layer[42].image = this.images[this.data.front];
 	this.layer[43].image = this.images[this.data.side];
 	//this.layer[44].image = this.images['shadow_' + this.data.head];
-	this.layer[44].image = this.images[this.data.ear];
+	this.layer[44].image = this.images['earmuff_' + this.data.ear];
 	this.layer[45].image = this.images[this.data.head + this.data.headColor];
 	
 	this.changeEyeColor();
