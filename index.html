@@ -15,7 +15,7 @@
 <body>
 <div id="wrap"> 
 	<div id="header">
-		カスタム立ち絵　ver0.81
+		カスタム立ち絵　ver0.82
         </div><!-- /header -->  
 	<div id="inner">
 		<div id="leftWrap">
@@ -31,6 +31,7 @@
 					<option value="jagi1">ジャギ(短)</option>
 					<option value="jagi2">ジャギ(長)</option>
 					<option value="naname">斜め分け</option>
+					<option value="center">センター分け</option>
 					</select></label>
 					<br>
 
@@ -48,10 +49,14 @@
 					<option value="long">ロング</option>
 					<option value="semilong">セミロング</option>
 					<option value="bob">ボブ</option>
+					<option value="short">ショート</option>
 					<option value="pony">ポニーテール</option>
 					<option value="twin">ツインテール</option>
+					<option value="twoside">ツーサイドアップ</option>
 					</label>
 					</select>
+					<br>
+					<label>ハイライト<input type="checkbox" name="hairhl" onchange="custom.hairhl(this.checked)"></label>
 				</div><!-- /itemContents -->
 						
 				<div class="itemLabel">髪色</div>
@@ -63,10 +68,12 @@
 			</div><!-- /item -->
 	
 			<div class="item">
-				<div class="itemLabel">目（輪郭・瞳・オプション）</div>
+				<div class="itemLabel">目（輪郭・瞳・光・オプション）</div>
 				<div class="itemContents">
-					<input type="number" name="eye" min="0" max="2" value="0" style="width:30px;" onchange="custom.eye(this.value)">
-					<input type="number" name="pupil" min="0" max="2" value="0" style="width:30px;" onchange="custom.pupil(this.value)">
+					<input type="number" name="eye" min="0" max="4" value="0" style="width:25px;" onchange="custom.eye(this.value)">
+					<input type="number" name="pupil" min="0" max="2" value="0" style="width:25px;" onchange="custom.pupil(this.value)">
+					<input type="number" name="pupilHl" min="-1" max="3" value="0" style="width:30px;" onchange="custom.pupilHl(this.value)">
+					
 					<select id="pupilOption" name="pupilOption" onchange="custom.pupilOption(this.value)">
 					<option value="">なし</option>
 					<option value="heart">ハート</option>
@@ -140,6 +147,7 @@
 					<label><select name="outer" onchange="custom.outer(this.value)">
 						<option value="">なし</option>
 						<option value="blazer">ブレザー</option>
+						<option value="blazerOpen">ブレザー(開)</option>
 					</select></label>
 
 					<label><input type="number" name="outerSleeve" min="0" max="3" value="1" style="width:30px;" oninput="custom.outerSleeve(this.value)"></label>
@@ -153,6 +161,8 @@
 						<option value="sailorB">セーラー(黒)</option>
 						<option value="sailorW">セーラー(白)</option>
 						<option value="shirtW">シャツ(白)</option>
+						<option value="shirtOpenW">シャツ(白/開)</option>
+						<option value="camisoleW">キャミ(白)</option>
 					</select></label>
 					
 					<label><input type="number" name="sleeve" min="0" max="3" value="1" style="width:30px;" oninput="custom.topSleeve(this.value)"></label>
@@ -189,7 +199,8 @@
 				<div class="itemContents">
 					<label><select name="bra" onchange="custom.bra(this.value)">
 						<option value="">なし</option>
-						<option value="bra">ブラ</option>
+						<option value="bra" selected>ブラ</option>
+						<option value="micro">マイクロ</option>
 					</select></label>
 
 					<label><select name="braColor" onchange="custom.braColor(this.value)">
@@ -202,9 +213,10 @@
 				<div class="itemContents">
 					<label><select name="pants" onchange="custom.pants(this.value)">
 						<option value="">なし</option>
-						<option value="pants">パンツ</option>
+						<option value="pants" selected>パンツ</option>
 						<option value="low">ローレグ</option>
 						<option value="high">ハイレグ</option>
+						<option value="micro">マイクロ</option>
 						<option value="spats">スパッツ</option>
 					</select></label>
 
@@ -252,6 +264,8 @@
 						<option value="">なし</option>
 						<option value="collar">首輪</option>
 						<option value="muffler">マフラー</option>
+						<option value="choker">チョーカー</option>
+						<option value="necklace">ネックレス</option>
 					</select></label>
 					
 					<label><select name="neckColor" onchange="custom.neckColor(this.value)">
@@ -313,12 +327,37 @@
 	<div class="botoomContents">
 	<button type=button onclick="custom.save()">保存</button>
 	<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://aebafuti.github.io/CustomStand/" data-lang="ja" data-text="">ツイート</a>
-	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}	(document, 'script', 'twitter-wjs');</script>
-	<div class="whisper">(本当はつくった画像を添付してツイートするボタンをつくりたいけど、よくわからないのでURLをシェアするだけのボタンを仮設置)</div>
+	<script>
+	!function(d,s,id){
+		var js,
+		fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
+		if(!d.getElementById(id)){
+			js=d.createElement(s);
+			js.id=id;
+			js.src=p+'://platform.twitter.com/widgets.js';
+			fjs.parentNode.insertBefore(js,fjs);
+			}
+		}	
+		(document, 'script', 'twitter-wjs');
+	</script>
+	<div class="whisper">
+	(現在画像付きでツイートを投稿する機能はありません。<br>
+	ローカル環境で実装には成功しましたが、動作にはPHPが必要なので、そのうちPHPが使えるサーバに引っ越すかと思います)</div>
 	</div><!-- /botoomContents -->
 	
 	<div class="botoomLabel">更新履歴</div>
 		<div class="botoomContents">
+		2016/06/18　ver0.82
+		<ul>
+		<li>「髪」や「目」にハイライトを設定できるように</li>
+		<li>「髪型」に「センター分け」「ショート」「ツーサイドアップ」を追加</li>
+		<li>「目」の種類を追加</li>
+		<li>「アウター」に「ブレザー(開)」を追加</li>
+		<li>「トップ」に「キャミ(白)」「シャツ(開)」を追加</li>
+		<li>「ブラ」に「マイクロ」を追加</li>
+		<li>「パンツ」に「マイクロ」を追加</li>
+		<li>「首」に「チョーカー」「ネックレス」を追加</li>
+		</ul>
 		2016/06/13　ver0.81
 		<ul>
 		<li>保存ボタンを実装</li>
