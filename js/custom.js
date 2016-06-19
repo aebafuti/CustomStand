@@ -620,7 +620,11 @@ Custom.prototype.skinColor = function(value){
 Custom.prototype.changeSkinColor = function(){
 	var array = [3, 20, 30, 47]; //素体、乳、髪影、耳
 	for(var i = 0; i < array.length; i++){
-		if(array[i] === 47 && (this.data.ear === 'mecha' || this.data.ear === 'antenna')){ continue; }
+		if(array[i] === 47 && (this.data.ear === 'mecha' || this.data.ear === 'antenna')){ 
+			this.layer[array[i]].filters = null;
+			this.layer[array[i]].cache(0,0,this.width,this.height);
+			continue; 
+		}
 		this.layer[array[i]].filters = [new createjs.ColorFilter(this.data.skinColor[0], this.data.skinColor[1], this.data.skinColor[2], 1)];
 		this.layer[array[i]].cache(0,0,this.width,this.height);
 	};
