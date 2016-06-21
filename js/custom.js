@@ -499,6 +499,8 @@ Custom.prototype.initialize = function() {
 			{src: 'image/55_general_hl.png', 		id: 'side2_hl'},
 			{src: 'image/55_general_hl.png', 		id: 'wave0_hl'},
 			{src: 'image/55_general_hl.png', 		id: 'wave2_hl'},
+			{src: 'image/55_general_hl.png', 		id: 'moff0_hl'},
+			{src: 'image/55_general_hl.png', 		id: 'moff2_hl'},
 			{src: 'image/55_general_hl.png.png', 		id: 'moff0_hl'},
 			{src: 'image/55_general_hl.png.png', 		id: 'moff2_hl'},
 			
