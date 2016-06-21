@@ -15,7 +15,7 @@
 <body>
 <div id="wrap"> 
 	<div id="header">
-		カスタム立ち絵　ver0.82
+		カスタム立ち絵　ver0.83
         </div><!-- /header -->  
 	<div id="inner">
 		<div id="leftWrap">
@@ -30,6 +30,9 @@
 					<option value="jagi0">ジャギ</option>
 					<option value="jagi1">ジャギ(短)</option>
 					<option value="jagi2">ジャギ(長)</option>
+					<option value="mof0">モフ</option>
+					<option value="mof1">モフ(短)</option>
+					<option value="mof2">モフ(長)</option>
 					<option value="naname">斜め分け</option>
 					<option value="center">センター分け</option>
 					</select></label>
@@ -42,12 +45,15 @@
 					<option value="side2">ストレート(長)</option>
 					<option value="wave0">ウェーブ</option>
 					<option value="wave2">ウェーブ(長)</option>
+					<option value="moff0">モフ</option>
+					<option value="moff2">モフ(長)</option>
 					</select></label>
 					<br>
 
 					<label>バック<select name="backHair" onchange="custom.backHair(this.value)">
 					<option value="long">ロング</option>
 					<option value="semilong">セミロング</option>
+					<option value="airly">エアリー</option>
 					<option value="bob">ボブ</option>
 					<option value="short">ショート</option>
 					<option value="pony">ポニーテール</option>
@@ -89,10 +95,11 @@
 					B<input type="range" name="eyeColorB" max="255" oninput="custom.eyeColor(this.value, 2)"  value="0"><br>
 				</div><!-- /itemContents -->
 								
-				<div class="itemLabel">眉の形（形・角度）</div>
+				<div class="itemLabel">眉（形・角度）</div>
 				<div class="itemContents">
 					<input type="number" name="eyeBrow" min="0" max="2" value="0" style="width:30px;" onchange="custom.eyebrow(this.value)">
 					<input type="number" name="eyeBrowEx" min="0" max="3" value="0" style="width:30px;" onchange="custom.eyebrowEx(this.value)">
+					<label>濃<input type="checkbox" name="eyebrowDark" onchange="custom.eyebrowDark(this.checked)"></label>
 				</div><!-- /itemContents -->
 
 				<div class="itemLabel">表情</div>
@@ -130,6 +137,9 @@
 						<select name="ear" onchange="custom.ear(this.value)">
 						<option value="">なし</option>
 						<option value="normal" selected>通常</option>
+						<option value="elf">エルフ</option>
+						<option value="cat">ネコ</option>
+						<option value="fox">キツネ</option>
 						<option value="mecha">機械</option>
 						<option value="antenna">アンテナ</option>
 						<option value="headphone">ヘッドフォン</option>
@@ -142,12 +152,14 @@
 			
 
 			<div class="item">
-				<div class="itemLabel">アウター</div>
+				<div class="itemLabel">アウター(袖・裾)</div>
 				<div class="itemContents">
 					<label><select name="outer" onchange="custom.outer(this.value)">
 						<option value="">なし</option>
 						<option value="blazer">ブレザー</option>
 						<option value="blazerOpen">ブレザー(開)</option>
+						<option value="trench">トレンチ</option>
+						<option value="trenchOpen">トレンチ(開)</option>
 					</select></label>
 
 					<label><input type="number" name="outerSleeve" min="0" max="3" value="1" style="width:30px;" oninput="custom.outerSleeve(this.value)"></label>
@@ -161,8 +173,11 @@
 						<option value="sailorB">セーラー(黒)</option>
 						<option value="sailorW">セーラー(白)</option>
 						<option value="shirtW">シャツ(白)</option>
-						<option value="shirtOpenW">シャツ(白/開)</option>
+						<option value="shirtOpenW">シャツ(開/白)</option>
+						<option value="camisoleB">キャミ(黒)</option>
 						<option value="camisoleW">キャミ(白)</option>
+						<option value="tubeB">チューブ(黒)</option>
+						<option value="tubeW">チューブ(白)</option>
 					</select></label>
 					
 					<label><input type="number" name="sleeve" min="0" max="3" value="1" style="width:30px;" oninput="custom.topSleeve(this.value)"></label>
@@ -178,6 +193,7 @@
 						<option value="skirtBu">プリーツ(青)</option>
 						<option value="tight">タイト</option>
 						<option value="jeans">ジーンズ</option>
+						<option value="stretch">ストレッチ</option>
 					</select></label>
 
 					<label><input type="number" name="bottomLength" min="-1" max="3" value="1" style="width:30px;" oninput="custom.bottomLength(this.value)"></label>
@@ -233,12 +249,16 @@
 					<label><select name="head" onchange="custom.head(this.value)">
 						<option value="">なし</option>
 						<option value="hairband">ヘアバンド</option>
+						<option value="ribbon">リボン</option>
 						<option value="casquette">キャスケット</option>
+						<option value="knitcap">ニット帽</option>
 					</select></label>
 					
 					<label><select name="headColor" onchange="custom.headColor(this.value)">
 						<option value="B">黒</option>
 						<option value="W">白</option>
+						<option value="R">赤</option>
+						<option value="Bu">青</option>
 						<option value="K">黄土</option>
 					</select></label>
 					
@@ -248,7 +268,11 @@
 				<div class="itemContents">
 					<label><select name="glasses" onchange="custom.glasses(this.value)">
 						<option value="">なし</option>
-						<option value="glasses0">メガネ</option>
+						<option value="square">スクエア</option>
+						<option value="round">ラウンド</option>
+						<option value="wellington">ウェリントン</option>
+						<option value="underrim">アンダーリム</option>
+						<option value="visor">バイザー</option>
 					</select></label>
 					
 					<label><select name="glassesColor" onchange="custom.glassesColor(this.value)">
@@ -347,6 +371,19 @@
 	
 	<div class="botoomLabel">更新履歴</div>
 		<div class="botoomContents">
+		2016/06/21　ver0.83
+		<ul>
+		<li>ロード状況をパーセント表示するように</li>
+		<li>「眉」や「睫毛」を髪の色に対して濃くできるように</li>
+		<li>「髪型」に「モフ」「エアリー」追加</li>
+		<li>「耳」に「エルフ」「ネコ」「キツネ」を追加</li>
+		<li>「アウター」に「トレンチコート」「トレンチコート(開)」を追加</li>
+		<li>「トップ」に「キャミ(黒)」「チューブ(黒)」「チューブ(白)」を追加</li>
+		<li>「ボトム」に「ストレッチ」を追加</li>
+		<li>「ヘッド」の色に「赤」「青」を追加</li>
+		<li>「ヘッド」に「ニット帽」「リボン」を追加</li>
+		<li>「メガネ」に「ラウンド」「ウェリントン」「アンダーリム」「バイザー」を追加</li>
+		</ul>
 		2016/06/18　ver0.82
 		<ul>
 		<li>「髪」や「目」にハイライトを設定できるように</li>
