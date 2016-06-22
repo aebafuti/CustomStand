@@ -820,7 +820,7 @@ Custom.prototype.longCoat = function(){
 
 
 Custom.prototype.changeHairColor = function(){
-	var array = [0, 44, 45, 50, 52, 54]; //後ろ髪、睫毛、眉毛、ケモ耳、バング、サイド
+	var array = [0, 44, 45, 50, 52, 54, 58]; //後ろ髪、睫毛、眉毛、ケモ耳、バング、サイド、アホ毛
 	for(var i = 0; i < array.length; i++){
 		this.layer[array[i]].filters = [new createjs.ColorFilter(this.data.hairColor[0], this.data.hairColor[1], this.data.hairColor[2], 1)];
 		if((array[i] === 44 || array[i] === 45) && this.data.eyebrowDark){
