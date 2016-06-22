@@ -27,6 +27,8 @@ Custom.prototype.initialize = function() {
 			{src: 'image/00_twin.png', 		id: 'twin'},
 			{src: 'image/00_twoside.png', 		id: 'twoside'},
 			{src: 'image/00_pony.png', 		id: 'pony'},
+			{src: 'image/00_soto.png', 		id: 'soto'},
+			{src: 'image/00_ippon.png', 		id: 'ippon'},
 			{src: 'image/00_ponyC.png', 		id: 'ponyC'},
 			{src: 'image/00_twinC.png', 		id: 'twinC'},
 			{src: 'image/00_twosideC.png', 		id: 'twosideC'},
@@ -133,34 +135,43 @@ Custom.prototype.initialize = function() {
 			{src: 'image/14_sailorW1.png', 				id: 'hem_sailorW1'},
 			{src: 'image/14_sailorW2.png', 				id: 'hem_sailorW2'},
 			{src: 'image/14_sailorW3.png', 				id: 'hem_sailorW3'},
+			{src: 'image/14_sailorW3_in.png', 				id: 'hem_sailorW3_in'},
 			{src: 'image/14_sailorB0.png', 				id: 'hem_sailorB0'},
 			{src: 'image/14_sailorB1.png', 				id: 'hem_sailorB1'},
 			{src: 'image/14_sailorB2.png', 				id: 'hem_sailorB2'},
 			{src: 'image/14_sailorB3.png', 				id: 'hem_sailorB3'},
+			{src: 'image/14_sailorB3_in.png', 				id: 'hem_sailorB3_in'},
 			{src: 'image/14_shirtW0.png', 				id: 'hem_shirtW0'},
 			{src: 'image/14_shirtW1.png', 				id: 'hem_shirtW1'},
 			{src: 'image/14_shirtW2.png', 				id: 'hem_shirtW2'},
 			{src: 'image/14_shirtW3.png', 				id: 'hem_shirtW3'},
+			{src: 'image/14_shirtW3_in.png', 				id: 'hem_shirtW3_in'},
 			{src: 'image/14_shirtOpenW0.png', 				id: 'hem_shirtOpenW0'},
 			{src: 'image/14_shirtOpenW1.png', 				id: 'hem_shirtOpenW1'},
 			{src: 'image/14_shirtOpenW2.png', 				id: 'hem_shirtOpenW2'},
 			{src: 'image/14_shirtOpenW3.png', 				id: 'hem_shirtOpenW3'},
+			{src: 'image/14_shirtOpenW3_in.png', 				id: 'hem_shirtOpenW3_in'},
 			{src: 'image/14_camisoleB0.png', 				id: 'hem_camisoleB0'},
 			{src: 'image/14_camisoleB1.png', 				id: 'hem_camisoleB1'},
 			{src: 'image/14_camisoleB2.png', 				id: 'hem_camisoleB2'},
 			{src: 'image/14_camisoleB3.png', 				id: 'hem_camisoleB3'},
+			{src: 'image/14_camisoleB3_in.png', 				id: 'hem_camisoleB3_in'},
 			{src: 'image/14_camisoleW0.png', 				id: 'hem_camisoleW0'},
 			{src: 'image/14_camisoleW1.png', 				id: 'hem_camisoleW1'},
 			{src: 'image/14_camisoleW2.png', 				id: 'hem_camisoleW2'},
 			{src: 'image/14_camisoleW3.png', 				id: 'hem_camisoleW3'},
+			{src: 'image/14_camisoleW3_in.png', 				id: 'hem_camisoleW3_in'},
 			{src: 'image/14_tubeB0.png', 				id: 'hem_tubeB0'},
 			{src: 'image/14_tubeB1.png', 				id: 'hem_tubeB1'},
 			{src: 'image/14_tubeB2.png', 				id: 'hem_tubeB2'},
 			{src: 'image/14_tubeB3.png', 				id: 'hem_tubeB3'},
+			{src: 'image/14_tubeB3_in.png', 				id: 'hem_tubeB3_in'},
 			{src: 'image/14_tubeW0.png', 				id: 'hem_tubeW0'},
 			{src: 'image/14_tubeW1.png', 				id: 'hem_tubeW1'},
 			{src: 'image/14_tubeW2.png', 				id: 'hem_tubeW2'},
 			{src: 'image/14_tubeW3.png', 				id: 'hem_tubeW3'},
+			{src: 'image/14_tubeW3_in.png', 				id: 'hem_tubeW3_in'},
+			
 			
 			{src: 'image/15_blazer0.png', 				id: 'hem_blazer0'},
 			{src: 'image/15_blazer1.png', 				id: 'hem_blazer1'},
@@ -367,6 +378,7 @@ Custom.prototype.initialize = function() {
 			{src: 'image/30_hairshadow_mof2.png', 	id: 'hairshadow_mof2'},
 			{src: 'image/30_hairshadow_naname.png', 	id: 'hairshadow_naname'},
 			{src: 'image/30_hairshadow_center.png', 	id: 'hairshadow_center'},
+			{src: 'image/30_hairshadow_katame0.png', 	id: 'hairshadow_katame0'},
 			{src: 'image/31_cheek.png', 	id: 'cheek'},
 			{src: 'image/32_mouth_normal.png', 		id: 'normal'},
 			{src: 'image/32_mouth_smile0.png', 		id: 'smile0'},
@@ -375,6 +387,15 @@ Custom.prototype.initialize = function() {
 			{src: 'image/32_mouth_smile3.png', 		id: 'smile3'},
 			{src: 'image/32_mouth_open0.png', 		id: 'open0'},
 			{src: 'image/32_mouth_open1.png', 		id: 'open1'},
+			{src: 'image/32_mouth_tate0.png', 		id: 'tate0'},
+			{src: 'image/32_mouth_tate1.png', 		id: 'tate1'},
+			{src: 'image/32_mouth_yoko0.png', 		id: 'yoko0'},
+			{src: 'image/32_mouth_yoko1.png', 		id: 'yoko1'},
+			{src: 'image/32_mouth_giza0.png', 		id: 'giza0'},
+			{src: 'image/32_mouth_giza1.png', 		id: 'giza1'},
+			{src: 'image/32_mouth_yaeOpen1.png', 		id: 'yaeOpen1'},
+			{src: 'image/32_mouth_yaeSmile2.png', 		id: 'yaeSmile2'},
+			{src: 'image/32_mouth_yaeSmile3.png', 		id: 'yaeSmile3'},
 			
 			{src: 'image/40_eye.png', 			id: 'eye'},
 			{src: 'image/40_eye0.png', 			id: 'eye0'},
@@ -385,13 +406,22 @@ Custom.prototype.initialize = function() {
 			{src: 'image/41_pupil0.png', 			id: 'pupil0'},
 			{src: 'image/41_pupil1.png', 			id: 'pupil1'},
 			{src: 'image/41_pupil2.png', 			id: 'pupil2'},
+			{src: 'image/41_pupil3.png', 			id: 'pupil3'},
 			{src: 'image/42_heart.png', 			id: 'heart'},
 			{src: 'image/42_star.png', 			id: 'star'},
 			{src: 'image/42_kira.png', 			id: 'kira'},
-			{src: 'image/43_pupil_hl0.png', 			id: 'pupil_hl0'},
+			{src: 'image/42_heart_s.png', 			id: 'heart_s'},
+			{src: 'image/42_star_s.png', 			id: 'star_s'},
+			{src: 'image/42_kira_s.png', 			id: 'kira_s'},
+			
 			{src: 'image/43_pupil_hl1.png', 			id: 'pupil_hl1'},
 			{src: 'image/43_pupil_hl2.png', 			id: 'pupil_hl2'},
 			{src: 'image/43_pupil_hl3.png', 			id: 'pupil_hl3'},
+			{src: 'image/43_pupil_hl4.png', 			id: 'pupil_hl4'},
+			{src: 'image/43_pupil_hl1_s.png', 			id: 'pupil_hl1_s'},
+			{src: 'image/43_pupil_hl2_s.png', 			id: 'pupil_hl2_s'},
+			{src: 'image/43_pupil_hl3_s.png', 			id: 'pupil_hl3_s'},
+			{src: 'image/43_pupil_hl4_s.png', 			id: 'pupil_hl4_s'},
 			{src: 'image/44_eyelashes0.png', 	id: 'eyelashes0'},
 			{src: 'image/44_eyelashes1.png', 	id: 'eyelashes1'},
 			{src: 'image/44_eyelashes2.png', 	id: 'eyelashes2'},
@@ -475,6 +505,7 @@ Custom.prototype.initialize = function() {
 			{src: 'image/52_mof2.png', 		id: 'mof2'},
 			{src: 'image/52_naname.png', 		id: 'naname'},
 			{src: 'image/52_center.png', 		id: 'center'},
+			{src: 'image/52_katame0.png', 		id: 'katame0'},
 			{src: 'image/53_general_hl.png', 		id: 'pattun0_hl'},
 			{src: 'image/53_general_hl.png', 		id: 'pattun1_hl'},
 			{src: 'image/53_general_hl.png', 		id: 'pattun2_hl'},
@@ -485,6 +516,7 @@ Custom.prototype.initialize = function() {
 			{src: 'image/53_general_hl.png', 		id: 'mof1_hl'},
 			{src: 'image/53_general_hl.png', 		id: 'mof2_hl'},
 			{src: 'image/53_naname_hl.png', 		id: 'naname_hl'},
+			{src: 'image/53_naname_hl.png', 		id: 'katame0_hl'},
 			{src: 'image/53_center_hl.png', 		id: 'center_hl'},
 			
 			{src: 'image/54_side0.png', 		id: 'side0'},
@@ -520,6 +552,9 @@ Custom.prototype.initialize = function() {
 			{src: 'image/57_knitcapK.png', 		id: 'knitcapK'},
 			{src: 'image/57_knitcapR.png', 		id: 'knitcapR'},
 			{src: 'image/57_knitcapBu.png', 		id: 'knitcapBu'},
+			
+			{src: 'image/58_ippon.png', 		id: 'ahoge_ippon'},
+			{src: 'image/58_nihon.png', 		id: 'ahoge_nihon'},
 	  	];
 	
 	this.preload = new createjs.LoadQueue();
@@ -538,7 +573,8 @@ Custom.prototype.initialize = function() {
 	this.data = {
 			front:'pattun', 
 			side:'side0',
-			back:'long', 
+			back:'long',
+			ahoge:'', 
 			hairhl:'',
 			hairColor:[0,0,0], 
 			cheek:'',
@@ -568,6 +604,7 @@ Custom.prototype.initialize = function() {
 			top:'',
 			sleeve:'1',
 			hem:'1',
+			hemin:false,
 			glasses:'',
 			glassesColor:'',
 			head:'',
@@ -589,6 +626,7 @@ Custom.prototype.formLoad = function (){
 	this.data.front = document.forms.customForm.frontHair.value;
 	this.data.side = document.forms.customForm.sideHair.value;
 	this.data.back = document.forms.customForm.backHair.value;
+	this.data.ahoge = document.forms.customForm.ahoge.value;
 	this.data.hairhl = document.forms.customForm.hairhl.checked ? this.data.hairhl = '_hl' : this.data.hairhl = '_';
 	
 	this.data.hairColor[0] = document.forms.customForm.hairColorR.value / 128;
@@ -619,6 +657,7 @@ Custom.prototype.formLoad = function (){
 	this.data.top =  document.forms.customForm.top.value;
 	this.data.sleeve =  document.forms.customForm.sleeve.value;
 	this.data.hem =  document.forms.customForm.hem.value;
+	this.data.hemin = document.forms.customForm.hemin.checked;
 	
 	this.data.bottom =  document.forms.customForm.bottom.value;
 	this.data.bottomLength =  document.forms.customForm.bottomLength.value;
@@ -640,13 +679,15 @@ Custom.prototype.formLoad = function (){
 	this.data.socks = document.forms.customForm.socks.value;
 	this.data.socksColor = document.forms.customForm.socksColor.value;
 	
+	this.rangeNumberDefault();
+	
 	this.preload.addEventListener("progress",  function(event){
 	  	custom.progress = Math.floor(event.progress * 100);
 	  	custom.progressText.text = 'Loading... ' + String(custom.progress) + '%';
 	});
 	
 	this.preload.addEventListener("complete",function(event){
-		var array = [0,1,2,3,4,5,7,8,9,10,11,12,13,14,15,16,20,22,23,24,25,26,27,28,29,30,31,32,33,34,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57];
+		var array = [0,1,2,3,4,5,7,8,9,10,11,12,13,14,15,16,20,22,23,24,25,26,27,28,29,30,31,32,33,34,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58];
 		for(var i = 0; i < array.length; i++){
 			custom.layer[array[i]] = new createjs.Bitmap();
 		}
@@ -690,8 +731,14 @@ Custom.prototype.update = function (){
 	
 	this.layer[11].image = this.images[this.data.pants + this.data.pantsColor];
 	this.layer[12].image = this.images[this.data.socks + this.data.socksColor];
-	this.layer[13].image = this.images[this.data.bottom + this.data.bottomLength];
-	this.layer[14].image = this.images['hem_' +this.data.top + this.data.hem];
+	
+	if(this.data.hemin){
+		this.layer[14].image = this.images[this.data.bottom + this.data.bottomLength];
+		this.layer[13].image = this.images['hem_' +this.data.top + this.data.hem + ((this.data.hem === '3') ? '_in' : '')]
+	}else{
+		this.layer[13].image = this.images[this.data.bottom + this.data.bottomLength];
+		this.layer[14].image = this.images['hem_' +this.data.top + this.data.hem];
+	}
 	this.layer[15].image = this.images['hem_' + this.data.outer + this.data.outerHem];
 	
 	this.layer[20].image = this.images['breast' + this.data.breast];
@@ -707,8 +754,8 @@ Custom.prototype.update = function (){
 	
 	this.layer[40].image = this.images['eye' + this.data.eyelashes];
 	this.layer[41].image = this.images['pupil' + this.data.pupil];
-	this.layer[42].image = this.images[this.data.pupilOption];
-	this.layer[43].image = this.images['pupil_hl' + this.data.pupilHl];
+	this.layer[42].image = this.images[this.data.pupilOption + ((this.data.pupil === '3') ? '_s':'')];
+	this.layer[43].image = this.images['pupil_hl' + this.data.pupilHl + ((this.data.pupil === '3') ? '_s':'')];
 	this.layer[44].image = this.images['eyelashes' + this.data.eyelashes];
 	this.layer[45].image = this.images['eyebrow' + this.data.eyebrow + '_' + this.data.eyebrowEx];
 	
@@ -725,6 +772,8 @@ Custom.prototype.update = function (){
 	this.layer[55].image = this.images[this.data.side + this.data.hairhl];
 	this.layer[56].image = this.images['earmuff_' + this.data.ear];
 	this.layer[57].image = this.images[this.data.head + this.data.headColor];
+	
+	this.layer[58].image = this.images['ahoge_' + this.data.ahoge];
 	
 	this.changeEyeColor();
 	this.changeHairColor();
@@ -785,6 +834,35 @@ Custom.prototype.changeEyeColor = function(){
 	this.layer[41].filters = [new createjs.ColorFilter(this.data.eyeColor[0], this.data.eyeColor[1], this.data.eyeColor[2], 1)];
 	this.layer[41].cache(0,0,this.width,this.height);
 };
+
+
+Custom.prototype.rangeNumber = function(value,id){
+	var range = document.getElementById(id);
+	var text = document.createTextNode(value)
+	if(range.hasChildNodes()){
+		range.replaceChild(text, range.firstChild);
+	}else{
+		range.appendChild(text);
+	}
+}
+
+Custom.prototype.rangeNumberDefault = function(){
+	var color = [];
+	var colorNum = [];
+	colorNum[0] = String(document.forms.customForm.hairColorR.value);
+	colorNum[1] = String(document.forms.customForm.hairColorG.value);
+	colorNum[2] = String(document.forms.customForm.hairColorB.value);
+	for (var i = 0; i <= 2; i++){
+		this.rangeNumber(colorNum[i], 'hairColor' + String(i));
+	}
+	
+	colorNum[0] = String(document.forms.customForm.eyeColorR.value);
+	colorNum[1] = String(document.forms.customForm.eyeColorG.value);
+	colorNum[2] = String(document.forms.customForm.eyeColorB.value);
+	for (var i = 0; i <= 2; i++){
+		this.rangeNumber(colorNum[i], 'eyeColor' + String(i));
+	}
+}
 
 Custom.prototype.skinColor = function(value){
 	switch (Number(value)){
@@ -854,8 +932,14 @@ Custom.prototype.sideHair = function(value){
 	this.update();
 };
 
+Custom.prototype.ahoge = function(value){
+	this.data.ahoge = value;
+	this.update();
+};
+
 Custom.prototype.hairColor = function(color, type){
 	this.data.hairColor[type]  = color / 128;
+	this.rangeNumber(color, 'hairColor' + String(type))
 	this.update();
 };
 
@@ -886,6 +970,7 @@ Custom.prototype.pupilHl = function(value){
 
 Custom.prototype.eyeColor = function(color, type){
 	this.data.eyeColor[type]  = color / 128;
+	this.rangeNumber(color, 'eyeColor' + String(type))
 	this.update();
 };
 
@@ -966,6 +1051,11 @@ Custom.prototype.bottom = function(value){
 
 Custom.prototype.bottomLength = function(value){
 	this.data.bottomLength = value;
+	this.update();
+};
+
+Custom.prototype.hemin = function(checked){
+	this.data.hemin = checked;
 	this.update();
 };
 

@@ -15,7 +15,7 @@
 <body>
 <div id="wrap"> 
 	<div id="header">
-		カスタム立ち絵　ver0.83
+		カスタム立ち絵　ver0.84
         </div><!-- /header -->  
 	<div id="inner">
 		<div id="leftWrap">
@@ -35,6 +35,7 @@
 					<option value="mof2">モフ(長)</option>
 					<option value="naname">斜め分け</option>
 					<option value="center">センター分け</option>
+					<option value="katame0">片目隠れ</option>
 					</select></label>
 					<br>
 
@@ -56,9 +57,19 @@
 					<option value="airly">エアリー</option>
 					<option value="bob">ボブ</option>
 					<option value="short">ショート</option>
+					<option value="soto">外はね</option>
 					<option value="pony">ポニーテール</option>
 					<option value="twin">ツインテール</option>
 					<option value="twoside">ツーサイドアップ</option>
+					<option value="ippon">一本結び</option>
+					</label>
+					</select>
+					<br>
+					
+					<label>アホ毛<select name="ahoge" onchange="custom.ahoge(this.value)">
+					<option value="">なし</option>
+					<option value="ippon">一本</option>
+					<option value="nihon">二本</option>
 					</label>
 					</select>
 					<br>
@@ -67,9 +78,9 @@
 						
 				<div class="itemLabel">髪色</div>
 				<div class="itemContents">
-					R<input type="range" name="hairColorR" max="255" oninput="custom.hairColor(this.value, 0)"  value="0"><br>
-					G<input type="range" name="hairColorG" max="255" oninput="custom.hairColor(this.value, 1)"  value="0"><br>
-					B<input type="range" name="hairColorB" max="255" oninput="custom.hairColor(this.value, 2)"  value="0"><br>
+					R<input type="range" name="hairColorR" max="255" oninput="custom.hairColor(this.value, 0)" style="width:160px;" value="0"><span id="hairColor0"></span><br>
+					G<input type="range" name="hairColorG" max="255" oninput="custom.hairColor(this.value, 1)" style="width:160px;" value="0"><span id="hairColor1"></span><br>
+					B<input type="range" name="hairColorB" max="255" oninput="custom.hairColor(this.value, 2)" style="width:160px;" value="0"><span id="hairColor2"></span><br>
 				</div><!-- /itemContents -->
 			</div><!-- /item -->
 	
@@ -77,8 +88,8 @@
 				<div class="itemLabel">目（輪郭・瞳・光・オプション）</div>
 				<div class="itemContents">
 					<input type="number" name="eye" min="0" max="4" value="0" style="width:25px;" onchange="custom.eye(this.value)">
-					<input type="number" name="pupil" min="0" max="2" value="0" style="width:25px;" onchange="custom.pupil(this.value)">
-					<input type="number" name="pupilHl" min="-1" max="3" value="0" style="width:30px;" onchange="custom.pupilHl(this.value)">
+					<input type="number" name="pupil" min="0" max="3" value="2" style="width:25px;" onchange="custom.pupil(this.value)">
+					<input type="number" name="pupilHl" min="0" max="4" value="1" style="width:25px;" onchange="custom.pupilHl(this.value)">
 					
 					<select id="pupilOption" name="pupilOption" onchange="custom.pupilOption(this.value)">
 					<option value="">なし</option>
@@ -90,9 +101,9 @@
 		
 				<div class="itemLabel">目の色</div>
 				<div class="itemContents">
-					R<input type="range" name="eyeColorR" max="255" oninput="custom.eyeColor(this.value, 0)"  value="0"><br>
-					G<input type="range" name="eyeColorG" max="255" oninput="custom.eyeColor(this.value, 1)"  value="0"><br>
-					B<input type="range" name="eyeColorB" max="255" oninput="custom.eyeColor(this.value, 2)"  value="0"><br>
+					R<input type="range" name="eyeColorR" max="255" oninput="custom.eyeColor(this.value, 0)" style="width:160px;" value="128"><span id="eyeColor0"></span><br>
+					G<input type="range" name="eyeColorG" max="255" oninput="custom.eyeColor(this.value, 1)" style="width:160px;" value="128"><span id="eyeColor1"></span><br>
+					B<input type="range" name="eyeColorB" max="255" oninput="custom.eyeColor(this.value, 2)" style="width:160px;" value="128"><span id="eyeColor2"></span><br>
 				</div><!-- /itemContents -->
 								
 				<div class="itemLabel">眉（形・角度）</div>
@@ -113,6 +124,15 @@
 					<option value="smile1">笑み</option>
 					<option value="smile2">笑み2</option>
 					<option value="smile3">笑み3</option>
+					<option value="yaeOpen1">八重歯開き</option>
+					<option value="yaeSmile2">八重歯笑み2</option>
+					<option value="yaeSmile3">八重歯笑み3</option>
+					<option value="yoko0">横歯食い</option>
+					<option value="yoko1">横歯笑み</option>
+					<option value="tate0">縦歯食い</option>
+					<option value="tate1">縦歯笑み</option>
+					<option value="giza0">ギザ歯食い</option>
+					<option value="giza1">ギザ歯笑み</option>
 					</select>
 				</div><!-- /itemContents -->
 			</div><!-- /item -->
@@ -182,6 +202,8 @@
 					
 					<label><input type="number" name="sleeve" min="0" max="3" value="1" style="width:30px;" oninput="custom.topSleeve(this.value)"></label>
 					<label><input type="number" name="hem" min="0" max="3" value="1" style="width:30px;" oninput="custom.topHem(this.value)"></label>
+					<br>
+					<label>裾入れ<input type="checkbox" name="hemin" onchange="custom.hemin(this.checked)"></label>
 				</div><!-- /itemContents -->
 
 				<div class="itemLabel">ボトム(長さ)</div>
@@ -197,7 +219,6 @@
 					</select></label>
 
 					<label><input type="number" name="bottomLength" min="-1" max="3" value="1" style="width:30px;" oninput="custom.bottomLength(this.value)"></label>
-					
 				</div><!-- /itemContents -->
 			</div><!-- /item -->
 
@@ -371,6 +392,15 @@
 	
 	<div class="botoomLabel">更新履歴</div>
 		<div class="botoomContents">
+		2016/06/22　ver0.84
+		<ul>
+		<li>「髪色」「目の色」の数値を表示するように</li>
+		<li>「髪型」に「片目隠れ」「外はね」「一本結び」「アホ毛」追加</li>
+		<li>「目」の初期値を変更（変化がわかりやすいように）</li>
+		<li>「目」に三白眼を追加（「瞳」の「3」で設定可能）</li>
+		<li>「口」に「八重歯」「横歯」「縦歯」「ギザ歯」を追加</li>
+		<li>「トップ」に「裾入れ」機能を追加</li>
+		</ul>
 		2016/06/21　ver0.83
 		<ul>
 		<li>ロード状況をパーセント表示するように</li>
@@ -414,7 +444,7 @@
 	<div class="botoomLabel">利用方法</div>
 		<div class="botoomContents">		
 		「カスタム立ち絵」で生成した画像はそのまま右クリックで保存することができます。<br>
-		また、生成した画像は素材として利用することができます（「RPGツクールMV」の立ち絵素材など）。<br>
+		生成した画像は素材として利用することができ、加工して使うこともできます。（「RPGツクールMV」の立ち絵素材など）。<br>
 		利用報告は不要です。クレジットを表記する場合は「饗庭淵　カスタム立ち絵」などでお願いします。<br>
 		基本的になにをしてもよいですが、素材をそのまま転売するといった行為は禁止します。<br>
 		</div><!-- /botoomContents -->
