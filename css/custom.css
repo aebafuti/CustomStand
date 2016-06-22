@@ -12,7 +12,7 @@ body { text-align:center;}
 
 .item  {width:230px; margin:5px; float:left; background-color:#ccccff; line-height:200%;}
 .itemLabel {padding: 0px 5px; background-color:#9999FF;}
-.itemContents {padding: 2px 15px; font: 15px monospace;}
+.itemContents {padding: 2px 0px 2px 15px; font: 13px monospace;}
 
 .botoomLabel {padding: 5px;  margin:5px 0; font:bold 15px monospace; color:#ffffff; background-image:url('titleback.png');}
 .botoomContents {padding:2px 5px; text-align:left; font-size:13px;}
