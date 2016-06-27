@@ -15,7 +15,7 @@
 <body>
 <div id="wrap"> 
 	<div id="header">
-		カスタム立ち絵　ver0.84
+		カスタム立ち絵　ver0.85
         </div><!-- /header -->  
 	<div id="inner">
 		<div id="leftWrap">
@@ -58,29 +58,31 @@
 					<option value="bob">ボブ</option>
 					<option value="short">ショート</option>
 					<option value="soto">外はね</option>
+					<option value="wave">ウェーブ</option>
 					<option value="pony">ポニーテール</option>
 					<option value="twin">ツインテール</option>
 					<option value="twoside">ツーサイドアップ</option>
 					<option value="ippon">一本結び</option>
-					</label>
-					</select>
+					<option value="lowtwin">ローツイン</option>
+					</select></label>
 					<br>
 					
 					<label>アホ毛<select name="ahoge" onchange="custom.ahoge(this.value)">
 					<option value="">なし</option>
 					<option value="ippon">一本</option>
+					<option value="ipponF">一本(太)</option>
+					<option value="ipponC">一本(Ｃ)</option>
 					<option value="nihon">二本</option>
-					</label>
-					</select>
+					</select></label>
 					<br>
 					<label>ハイライト<input type="checkbox" name="hairhl" onchange="custom.hairhl(this.checked)" checked="checked"></label>
 				</div><!-- /itemContents -->
 						
 				<div class="itemLabel">髪色</div>
 				<div class="itemContents">
-					R<input type="range" name="hairColorR" max="255" oninput="custom.hairColor(this.value, 0)" style="width:160px;" value="0"><span id="hairColor0"></span><br>
-					G<input type="range" name="hairColorG" max="255" oninput="custom.hairColor(this.value, 1)" style="width:160px;" value="0"><span id="hairColor1"></span><br>
-					B<input type="range" name="hairColorB" max="255" oninput="custom.hairColor(this.value, 2)" style="width:160px;" value="0"><span id="hairColor2"></span><br>
+					R<input type="range" name="hairColorR" max="255" oninput="custom.hairColor(this.value, 0)" style="width:150px;" value="0"><span id="hairColor0"></span><br>
+					G<input type="range" name="hairColorG" max="255" oninput="custom.hairColor(this.value, 1)" style="width:150px;" value="0"><span id="hairColor1"></span><br>
+					B<input type="range" name="hairColorB" max="255" oninput="custom.hairColor(this.value, 2)" style="width:150px;" value="0"><span id="hairColor2"></span><br>
 				</div><!-- /itemContents -->
 			</div><!-- /item -->
 	
@@ -101,9 +103,9 @@
 		
 				<div class="itemLabel">目の色</div>
 				<div class="itemContents">
-					R<input type="range" name="eyeColorR" max="255" oninput="custom.eyeColor(this.value, 0)" style="width:160px;" value="128"><span id="eyeColor0"></span><br>
-					G<input type="range" name="eyeColorG" max="255" oninput="custom.eyeColor(this.value, 1)" style="width:160px;" value="128"><span id="eyeColor1"></span><br>
-					B<input type="range" name="eyeColorB" max="255" oninput="custom.eyeColor(this.value, 2)" style="width:160px;" value="128"><span id="eyeColor2"></span><br>
+					R<input type="range" name="eyeColorR" max="255" oninput="custom.eyeColor(this.value, 0)" style="width:150px;" value="128"><span id="eyeColor0"></span><br>
+					G<input type="range" name="eyeColorG" max="255" oninput="custom.eyeColor(this.value, 1)" style="width:150px;" value="128"><span id="eyeColor1"></span><br>
+					B<input type="range" name="eyeColorB" max="255" oninput="custom.eyeColor(this.value, 2)" style="width:150px;" value="128"><span id="eyeColor2"></span><br>
 				</div><!-- /itemContents -->
 								
 				<div class="itemLabel">眉（形・角度）</div>
@@ -180,6 +182,8 @@
 						<option value="blazerOpen">ブレザー(開)</option>
 						<option value="trench">トレンチ</option>
 						<option value="trenchOpen">トレンチ(開)</option>
+						<option value="cape">ケープ</option>
+						<option value="capeR">ケープ(裏赤)</option>
 					</select></label>
 
 					<label><input type="number" name="outerSleeve" min="0" max="3" value="1" style="width:30px;" oninput="custom.outerSleeve(this.value)"></label>
@@ -194,10 +198,14 @@
 						<option value="sailorW">セーラー(白)</option>
 						<option value="shirtW">シャツ(白)</option>
 						<option value="shirtOpenW">シャツ(開/白)</option>
+						<option value="shirtB">シャツ(黒)</option>
+						<option value="shirtOpenB">シャツ(開/黒)</option>
 						<option value="camisoleB">キャミ(黒)</option>
 						<option value="camisoleW">キャミ(白)</option>
 						<option value="tubeB">チューブ(黒)</option>
 						<option value="tubeW">チューブ(白)</option>
+						<option value="maid">メイド服</option>
+						<option value="maidEro">エロメイド服</option>
 					</select></label>
 					
 					<label><input type="number" name="sleeve" min="0" max="3" value="1" style="width:30px;" oninput="custom.topSleeve(this.value)"></label>
@@ -216,6 +224,7 @@
 						<option value="tight">タイト</option>
 						<option value="jeans">ジーンズ</option>
 						<option value="stretch">ストレッチ</option>
+						<option value="stretchB">ストレッチ(黒)</option>
 					</select></label>
 
 					<label><input type="number" name="bottomLength" min="-1" max="3" value="1" style="width:30px;" oninput="custom.bottomLength(this.value)"></label>
@@ -228,7 +237,9 @@
 					<label><select name="inner" onchange="custom.inner(this.value)">
 						<option value="">なし</option>
 						<option value="suit">スーツ</option>
+						<option value="suitT">スーツ(厚)</option>
 						<option value="bodyTights">全身タイツ</option>
+						<option value="bodyTightsT">全身タイツ(厚)</option>
 					</select></label>
 				</div><!-- /itemContents -->
 
@@ -253,8 +264,10 @@
 						<option value="pants" selected>パンツ</option>
 						<option value="low">ローレグ</option>
 						<option value="high">ハイレグ</option>
+						<option value="high2">ハイレグ2</option>
 						<option value="micro">マイクロ</option>
 						<option value="spats">スパッツ</option>
+						<option value="spats2">スパッツ(厚)</option>
 					</select></label>
 
 					<label><select name="pantsColor" onchange="custom.pantsColor(this.value)">
@@ -271,8 +284,14 @@
 						<option value="">なし</option>
 						<option value="hairband">ヘアバンド</option>
 						<option value="ribbon">リボン</option>
+						<option value="flower">花</option>
+						<option value="maid">メイド</option>
+						<option value="headdress">ヘッドドレス</option>
+						<option value="horn">角</option>
 						<option value="casquette">キャスケット</option>
 						<option value="knitcap">ニット帽</option>
+						<option value="witch">魔女帽</option>
+						<option value="military">軍帽</option>
 					</select></label>
 					
 					<label><select name="headColor" onchange="custom.headColor(this.value)">
@@ -311,6 +330,8 @@
 						<option value="muffler">マフラー</option>
 						<option value="choker">チョーカー</option>
 						<option value="necklace">ネックレス</option>
+						<option value="necktie">ネクタイ</option>
+						<option value="ribbontie">リボンタイ</option>
 					</select></label>
 					
 					<label><select name="neckColor" onchange="custom.neckColor(this.value)">
@@ -392,6 +413,18 @@
 	
 	<div class="botoomLabel">更新履歴</div>
 		<div class="botoomContents">
+		2016/06/27　ver0.85
+		<ul>
+		<li>「髪型」に「ウェーブ」「ローツイン」を追加</li>
+		<li>「アホ毛」に「一本（太）」「一本(Ｃ)」</li>
+		<li>「アウター」に「ケープ」を追加</li>
+		<li>「トップ」に「シャツ(黒)」「メイド服」「エロメイド服」を追加</li>
+		<li>「ボトム」に「ストレッチ(黒)」を追加</li>
+		<li>「インナー」に「スーツ(厚)」「全身タイツ(厚)」を追加</li>
+		<li>「パンツ」に「ハイレグ2」「スパッツ(厚)」を追加</li>
+		<li>「ヘッド」に「花」「メイド」「ヘッドドレス」「角」「魔女帽」「軍帽」を追加</li>
+		<li>「首」に「ネクタイ」「リボンタイ」を追加</li>
+		</ul>
 		2016/06/22　ver0.84
 		<ul>
 		<li>「髪色」「目の色」の数値を表示するように</li>
