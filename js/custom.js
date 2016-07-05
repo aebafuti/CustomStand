@@ -29,14 +29,20 @@ Custom.prototype.initialize = function() {
 			{src: 'image/00_pony.png', 		id: 'pony'},
 			{src: 'image/00_soto.png', 		id: 'soto'},
 			{src: 'image/00_wave.png', 		id: 'wave'},
+			{src: 'image/00_sidetail.png', 		id: 'sidetail'},
+			{src: 'image/00_pig.png', 		id: 'pig'},
 			{src: 'image/00_ippon.png', 		id: 'ippon'},
 			{src: 'image/00_lowtwin.png', 		id: 'lowtwin'},
 			{src: 'image/00_ponyC.png', 		id: 'ponyC'},
 			{src: 'image/00_twinC.png', 		id: 'twinC'},
+			{src: 'image/00_sidetailC.png', 		id: 'sidetailC'},
+			{src: 'image/00_pigC.png', 		id: 'pigC'},
 			{src: 'image/00_twosideC.png', 		id: 'twosideC'},
 			{src: 'image/01_twin_hl.png', 		id: 'twin_hl'},
 			{src: 'image/01_twoside_hl.png', 		id: 'twoside_hl'},
 			{src: 'image/01_pony_hl.png', 		id: 'pony_hl'},
+			{src: 'image/01_pig_hl.png', 		id: 'pig_hl'},
+			{src: 'image/01_sidetail_hl.png', 		id: 'sidetail_hl'},
 			
 			{src: 'image/02_blazer.png', 				id: 'back_blazer'},
 			{src: 'image/02_blazer.png', 				id: 'back_blazerOpen'},
@@ -50,7 +56,23 @@ Custom.prototype.initialize = function() {
 			{src: 'image/02_capeR2.png', 				id: 'back_capeR2'},
 			{src: 'image/02_capeR3.png', 				id: 'back_capeR3'},
 			
-			{src: 'image/03_base.png', 				id: 'base'},
+			{src: 'image/03_fishtailR3.png', 				id: 'back_fishtailR-1'},
+			{src: 'image/03_fishtailR3.png', 				id: 'back_fishtailR0'},
+			{src: 'image/03_fishtailR3.png', 				id: 'back_fishtailR1'},
+			{src: 'image/03_fishtailR3.png', 				id: 'back_fishtailR2'},
+			{src: 'image/03_fishtailR3.png', 				id: 'back_fishtailR3'},
+			{src: 'image/03_fishtailB3.png', 				id: 'back_fishtailB-1'},
+			{src: 'image/03_fishtailB3.png', 				id: 'back_fishtailB0'},
+			{src: 'image/03_fishtailB3.png', 				id: 'back_fishtailB1'},
+			{src: 'image/03_fishtailB3.png', 				id: 'back_fishtailB2'},
+			{src: 'image/03_fishtailB3.png', 				id: 'back_fishtailB3'},
+			{src: 'image/03_fishtailBu3.png', 				id: 'back_fishtailBu-1'},
+			{src: 'image/03_fishtailBu3.png', 				id: 'back_fishtailBu0'},
+			{src: 'image/03_fishtailBu3.png', 				id: 'back_fishtailBu1'},
+			{src: 'image/03_fishtailBu3.png', 				id: 'back_fishtailBu2'},
+			{src: 'image/03_fishtailBu3.png', 				id: 'back_fishtailBu3'},
+			
+			{src: 'image/04_base.png', 				id: 'base'},
 			{src: 'image/05_base_hl.png', 				id: 'base_hl'},
 			
 			{src: 'image/07_suit.png', 				id: 'suit'},
@@ -98,6 +120,18 @@ Custom.prototype.initialize = function() {
 			{src: 'image/09_maid1_O.png', 				id: 'sleeve_maidEro1_O'},
 			{src: 'image/09_maid2_O.png', 				id: 'sleeve_maidEro2_O'},
 			{src: 'image/09_maid3_O.png', 				id: 'sleeve_maidEro3_O'},
+			{src: 'image/09_kimonoR1.png', 				id: 'sleeve_kimonoR1'},
+			{src: 'image/09_kimonoR2.png', 				id: 'sleeve_kimonoR2'},
+			{src: 'image/09_kimonoR3.png', 				id: 'sleeve_kimonoR3'},
+			{src: 'image/09_kimonoB1.png', 				id: 'sleeve_kimonoB1'},
+			{src: 'image/09_kimonoB2.png', 				id: 'sleeve_kimonoB2'},
+			{src: 'image/09_kimonoB3.png', 				id: 'sleeve_kimonoB3'},
+			{src: 'image/09_kimonoW1.png', 				id: 'sleeve_kimonoW1'},
+			{src: 'image/09_kimonoW2.png', 				id: 'sleeve_kimonoW2'},
+			{src: 'image/09_kimonoW3.png', 				id: 'sleeve_kimonoW3'},
+			{src: 'image/09_miko1.png', 				id: 'sleeve_miko1'},
+			{src: 'image/09_miko2.png', 				id: 'sleeve_miko2'},
+			{src: 'image/09_miko3.png', 				id: 'sleeve_miko3'},
 			
 			{src: 'image/10_blazer1.png', 				id: 'sleeve_blazer1'},
 			{src: 'image/10_blazer2.png', 				id: 'sleeve_blazer2'},
@@ -157,6 +191,22 @@ Custom.prototype.initialize = function() {
 			{src: 'image/13_tight1.png', 				id: 'tight1'},
 			{src: 'image/13_tight2.png', 				id: 'tight2'},
 			{src: 'image/13_tight3.png', 				id: 'tight3'},
+			
+			{src: 'image/13_fishtailR-1.png', 				id: 'fishtailR-1'},
+			{src: 'image/13_fishtailR0.png', 				id: 'fishtailR0'},
+			{src: 'image/13_fishtailR1.png', 				id: 'fishtailR1'},
+			{src: 'image/13_fishtailR2.png', 				id: 'fishtailR2'},
+			{src: 'image/13_fishtailR3.png', 				id: 'fishtailR3'},
+			{src: 'image/13_fishtailB0.png', 				id: 'fishtailB0'},
+			{src: 'image/13_fishtailB1.png', 				id: 'fishtailB1'},
+			{src: 'image/13_fishtailB2.png', 				id: 'fishtailB2'},
+			{src: 'image/13_fishtailB3.png', 				id: 'fishtailB3'},
+			{src: 'image/13_fishtailBu-1.png', 				id: 'fishtailBu-1'},
+			{src: 'image/13_fishtailBu0.png', 				id: 'fishtailBu0'},
+			{src: 'image/13_fishtailBu1.png', 				id: 'fishtailBu1'},
+			{src: 'image/13_fishtailBu2.png', 				id: 'fishtailBu2'},
+			{src: 'image/13_fishtailBu3.png', 				id: 'fishtailBu3'},
+			
 			{src: 'image/13_jeans-1.png', 				id: 'jeans-1'},
 			{src: 'image/13_jeans0.png', 				id: 'jeans0'},
 			{src: 'image/13_jeans1.png', 				id: 'jeans1'},
@@ -231,6 +281,22 @@ Custom.prototype.initialize = function() {
 			{src: 'image/14_maid1.png', 				id: 'hem_maidEro1'},
 			{src: 'image/14_maid2.png', 				id: 'hem_maidEro2'},
 			{src: 'image/14_maid3.png', 				id: 'hem_maidEro3'},
+			{src: 'image/14_kimonoR0.png', 				id: 'hem_kimonoR0'},
+			{src: 'image/14_kimonoR1.png', 				id: 'hem_kimonoR1'},
+			{src: 'image/14_kimonoR2.png', 				id: 'hem_kimonoR2'},
+			{src: 'image/14_kimonoR3.png', 				id: 'hem_kimonoR3'},
+			{src: 'image/14_kimonoB0.png', 				id: 'hem_kimonoB0'},
+			{src: 'image/14_kimonoB1.png', 				id: 'hem_kimonoB1'},
+			{src: 'image/14_kimonoB2.png', 				id: 'hem_kimonoB2'},
+			{src: 'image/14_kimonoB3.png', 				id: 'hem_kimonoB3'},
+			{src: 'image/14_kimonoW0.png', 				id: 'hem_kimonoW0'},
+			{src: 'image/14_kimonoW1.png', 				id: 'hem_kimonoW1'},
+			{src: 'image/14_kimonoW2.png', 				id: 'hem_kimonoW2'},
+			{src: 'image/14_kimonoW3.png', 				id: 'hem_kimonoW3'},
+			{src: 'image/14_miko0.png', 				id: 'hem_miko0'},
+			{src: 'image/14_miko1.png', 				id: 'hem_miko1'},
+			{src: 'image/14_miko2.png', 				id: 'hem_miko2'},
+			{src: 'image/14_miko3.png', 				id: 'hem_miko3'},
 			
 			{src: 'image/15_blazer0.png', 				id: 'hem_blazer0'},
 			{src: 'image/15_blazer1.png', 				id: 'hem_blazer1'},
@@ -397,6 +463,33 @@ Custom.prototype.initialize = function() {
 			{src: 'image/27_maidEro6.png', 			id: 'breast6_maidEro'},
 			{src: 'image/27_maidEro7.png', 			id: 'breast7_maidEro'},
 			
+			{src: 'image/27_kimonoR0.png', 			id: 'breast0_kimonoR'},
+			{src: 'image/27_kimonoR1.png', 			id: 'breast1_kimonoR'},
+			{src: 'image/27_kimonoR2.png', 			id: 'breast2_kimonoR'},
+			{src: 'image/27_kimonoR3.png', 			id: 'breast3_kimonoR'},
+			{src: 'image/27_kimonoR4.png', 			id: 'breast4_kimonoR'},
+			{src: 'image/27_kimonoR5.png', 			id: 'breast5_kimonoR'},
+			{src: 'image/27_kimonoR6.png', 			id: 'breast6_kimonoR'},
+			{src: 'image/27_kimonoR7.png', 			id: 'breast7_kimonoR'},
+			
+			{src: 'image/27_kimonoB0.png', 			id: 'breast0_kimonoB'},
+			{src: 'image/27_kimonoB1.png', 			id: 'breast1_kimonoB'},
+			{src: 'image/27_kimonoB2.png', 			id: 'breast2_kimonoB'},
+			{src: 'image/27_kimonoB3.png', 			id: 'breast3_kimonoB'},
+			{src: 'image/27_kimonoB4.png', 			id: 'breast4_kimonoB'},
+			{src: 'image/27_kimonoB5.png', 			id: 'breast5_kimonoB'},
+			{src: 'image/27_kimonoB6.png', 			id: 'breast6_kimonoB'},
+			{src: 'image/27_kimonoB7.png', 			id: 'breast7_kimonoB'},
+			
+			{src: 'image/27_kimonoW0.png', 			id: 'breast0_kimonoW'},
+			{src: 'image/27_kimonoW1.png', 			id: 'breast1_kimonoW'},
+			{src: 'image/27_kimonoW2.png', 			id: 'breast2_kimonoW'},
+			{src: 'image/27_kimonoW3.png', 			id: 'breast3_kimonoW'},
+			{src: 'image/27_kimonoW4.png', 			id: 'breast4_kimonoW'},
+			{src: 'image/27_kimonoW5.png', 			id: 'breast5_kimonoW'},
+			{src: 'image/27_kimonoW6.png', 			id: 'breast6_kimonoW'},
+			{src: 'image/27_kimonoW7.png', 			id: 'breast7_kimonoW'},
+			
 			{src: 'image/27_shirtOpenB0.png', 			id: 'breast0_shirtOpenB'},
 			{src: 'image/27_shirtOpenB1.png', 			id: 'breast1_shirtOpenB'},
 			{src: 'image/27_shirtOpenB2.png', 			id: 'breast2_shirtOpenB'},
@@ -442,24 +535,39 @@ Custom.prototype.initialize = function() {
 			{src: 'image/27_tubeW6.png', 			id: 'breast6_tubeW'},
 			{src: 'image/27_tubeW7.png', 			id: 'breast7_tubeW'},
 			
+			{src: 'image/27_miko0.png', 			id: 'breast0_miko'},
+			{src: 'image/27_miko1.png', 			id: 'breast1_miko'},
+			{src: 'image/27_miko2.png', 			id: 'breast2_miko'},
+			{src: 'image/27_miko3.png', 			id: 'breast3_miko'},
+			{src: 'image/27_miko4.png', 			id: 'breast4_miko'},
+			{src: 'image/27_miko5.png', 			id: 'breast5_miko'},
+			{src: 'image/27_miko6.png', 			id: 'breast6_miko'},
+			{src: 'image/27_miko7.png', 			id: 'breast7_miko'},
+			
 			{src: 'image/28_necktieB_G.png', 			id: 'tie_necktieB_G'},
 			{src: 'image/28_necktieB_GO.png', 			id: 'tie_necktieB_GO'},
 			{src: 'image/28_necktieB_O.png', 			id: 'tie_necktieB_O'},
 			{src: 'image/28_necktieB_OO.png', 			id: 'tie_necktieB_OO'},
 			{src: 'image/28_necktieB_S.png', 			id: 'tie_necktieB_S'},
 			{src: 'image/28_necktieB_SO.png', 			id: 'tie_necktieB_SO'},
+			{src: 'image/28_necktieB_K.png', 			id: 'tie_necktieB_K'},
+			{src: 'image/28_necktieB_KO.png', 			id: 'tie_necktieB_KO'},
 			{src: 'image/28_necktieW_G.png', 			id: 'tie_necktieW_G'},
 			{src: 'image/28_necktieW_GO.png', 			id: 'tie_necktieW_GO'},
 			{src: 'image/28_necktieW_O.png', 			id: 'tie_necktieW_O'},
 			{src: 'image/28_necktieW_OO.png', 			id: 'tie_necktieW_OO'},
 			{src: 'image/28_necktieW_S.png', 			id: 'tie_necktieW_S'},
 			{src: 'image/28_necktieW_SO.png', 			id: 'tie_necktieW_SO'},
+			{src: 'image/28_necktieW_K.png', 			id: 'tie_necktieW_K'},
+			{src: 'image/28_necktieW_KO.png', 			id: 'tie_necktieW_KO'},
 			{src: 'image/28_necktieR_G.png', 			id: 'tie_necktieR_G'},
 			{src: 'image/28_necktieR_GO.png', 			id: 'tie_necktieR_GO'},
 			{src: 'image/28_necktieR_O.png', 			id: 'tie_necktieR_O'},
 			{src: 'image/28_necktieR_OO.png', 			id: 'tie_necktieR_OO'},
 			{src: 'image/28_necktieR_S.png', 			id: 'tie_necktieR_S'},
 			{src: 'image/28_necktieR_SO.png', 			id: 'tie_necktieR_SO'},
+			{src: 'image/28_necktieR_K.png', 			id: 'tie_necktieR_K'},
+			{src: 'image/28_necktieR_KO.png', 			id: 'tie_necktieR_KO'},
 			
 			{src: 'image/28_ribbontieB_G.png', 			id: 'tie_ribbontieB_G'},
 			{src: 'image/28_ribbontieB_G.png', 			id: 'tie_ribbontieB_GO'},
@@ -467,18 +575,24 @@ Custom.prototype.initialize = function() {
 			{src: 'image/28_ribbontieB_O.png', 			id: 'tie_ribbontieB_OO'},
 			{src: 'image/28_ribbontieB_S.png', 			id: 'tie_ribbontieB_S'},
 			{src: 'image/28_ribbontieB_S.png', 			id: 'tie_ribbontieB_SO'},
+			{src: 'image/28_ribbontieB_K.png', 			id: 'tie_ribbontieB_K'},
+			{src: 'image/28_ribbontieB_K.png', 			id: 'tie_ribbontieB_KO'},
 			{src: 'image/28_ribbontieW_G.png', 			id: 'tie_ribbontieW_G'},
 			{src: 'image/28_ribbontieW_G.png', 			id: 'tie_ribbontieW_GO'},
 			{src: 'image/28_ribbontieW_O.png', 			id: 'tie_ribbontieW_O'},
 			{src: 'image/28_ribbontieW_O.png', 			id: 'tie_ribbontieW_OO'},
 			{src: 'image/28_ribbontieW_S.png', 			id: 'tie_ribbontieW_S'},
 			{src: 'image/28_ribbontieW_S.png', 			id: 'tie_ribbontieW_SO'},
+			{src: 'image/28_ribbontieW_K.png', 			id: 'tie_ribbontieW_K'},
+			{src: 'image/28_ribbontieW_K.png', 			id: 'tie_ribbontieW_KO'},
 			{src: 'image/28_ribbontieR_G.png', 			id: 'tie_ribbontieR_G'},
 			{src: 'image/28_ribbontieR_G.png', 			id: 'tie_ribbontieR_GO'},
 			{src: 'image/28_ribbontieR_O.png', 			id: 'tie_ribbontieR_O'},
 			{src: 'image/28_ribbontieR_O.png', 			id: 'tie_ribbontieR_OO'},
 			{src: 'image/28_ribbontieR_S.png', 			id: 'tie_ribbontieR_S'},
 			{src: 'image/28_ribbontieR_S.png', 			id: 'tie_ribbontieR_SO'},
+			{src: 'image/28_ribbontieR_K.png', 			id: 'tie_ribbontieR_K'},
+			{src: 'image/28_ribbontieR_K.png', 			id: 'tie_ribbontieR_KO'},
 			
 			
 			{src: 'image/29_blazer0.png', 			id: 'breast0_blazer'},
@@ -529,6 +643,10 @@ Custom.prototype.initialize = function() {
 			{src: 'image/30_hairshadow_mof0.png', 	id: 'hairshadow_mof0'},
 			{src: 'image/30_hairshadow_mof1.png', 	id: 'hairshadow_mof1'},
 			{src: 'image/30_hairshadow_mof2.png', 	id: 'hairshadow_mof2'},
+			{src: 'image/30_hairshadow_Mji0.png', 	id: 'hairshadow_Mji0'},
+			{src: 'image/30_hairshadow_Mji1.png', 	id: 'hairshadow_Mji1'},
+			{src: 'image/30_hairshadow_Mji2.png', 	id: 'hairshadow_Mji2'},
+			{src: 'image/30_hairshadow_nagashi.png', 	id: 'hairshadow_nagashi'},
 			{src: 'image/30_hairshadow_naname.png', 	id: 'hairshadow_naname'},
 			{src: 'image/30_hairshadow_center.png', 	id: 'hairshadow_center'},
 			{src: 'image/30_hairshadow_katame0.png', 	id: 'hairshadow_katame0'},
@@ -560,6 +678,7 @@ Custom.prototype.initialize = function() {
 			{src: 'image/41_pupil1.png', 			id: 'pupil1'},
 			{src: 'image/41_pupil2.png', 			id: 'pupil2'},
 			{src: 'image/41_pupil3.png', 			id: 'pupil3'},
+			{src: 'image/41_pupil4.png', 			id: 'pupil4'},
 			{src: 'image/42_heart.png', 			id: 'heart'},
 			{src: 'image/42_star.png', 			id: 'star'},
 			{src: 'image/42_kira.png', 			id: 'kira'},
@@ -575,6 +694,10 @@ Custom.prototype.initialize = function() {
 			{src: 'image/43_pupil_hl2_s.png', 			id: 'pupil_hl2_s'},
 			{src: 'image/43_pupil_hl3_s.png', 			id: 'pupil_hl3_s'},
 			{src: 'image/43_pupil_hl4_s.png', 			id: 'pupil_hl4_s'},
+			{src: 'image/43_pupil_hl1_ss.png', 			id: 'pupil_hl1_ss'},
+			{src: 'image/43_pupil_hl2_ss.png', 			id: 'pupil_hl2_ss'},
+			{src: 'image/43_pupil_hl3_ss.png', 			id: 'pupil_hl3_ss'},
+			{src: 'image/43_pupil_hl4_ss.png', 			id: 'pupil_hl4_ss'},
 			{src: 'image/44_eyelashes0.png', 	id: 'eyelashes0'},
 			{src: 'image/44_eyelashes1.png', 	id: 'eyelashes1'},
 			{src: 'image/44_eyelashes2.png', 	id: 'eyelashes2'},
@@ -629,6 +752,11 @@ Custom.prototype.initialize = function() {
 			{src: 'image/48_ribbonBu_t.png', 	id: 'back_ribbonBu_t'},
 			{src: 'image/48_ribbonR_t.png', 	id: 'back_ribbonR_t'},
 			{src: 'image/48_ribbonW_t.png', 	id: 'back_ribbonW_t'},
+			{src: 'image/48_ribbonK_s.png', 	id: 'back_ribbonK_s'},
+			{src: 'image/48_ribbonB_s.png', 	id: 'back_ribbonB_s'},
+			{src: 'image/48_ribbonBu_s.png', 	id: 'back_ribbonBu_s'},
+			{src: 'image/48_ribbonR_s.png', 	id: 'back_ribbonR_s'},
+			{src: 'image/48_ribbonW_s.png', 	id: 'back_ribbonW_s'},
 			{src: 'image/48_ribbonK_l.png', 	id: 'back_ribbonK_l'},
 			{src: 'image/48_ribbonB_l.png', 	id: 'back_ribbonB_l'},
 			{src: 'image/48_ribbonBu_l.png', 	id: 'back_ribbonBu_l'},
@@ -661,9 +789,13 @@ Custom.prototype.initialize = function() {
 			{src: 'image/52_mof0.png', 		id: 'mof0'},
 			{src: 'image/52_mof1.png', 		id: 'mof1'},
 			{src: 'image/52_mof2.png', 		id: 'mof2'},
+			{src: 'image/52_Mji0.png', 		id: 'Mji0'},
+			{src: 'image/52_Mji1.png', 		id: 'Mji1'},
+			{src: 'image/52_Mji2.png', 		id: 'Mji2'},
 			{src: 'image/52_naname.png', 		id: 'naname'},
 			{src: 'image/52_center.png', 		id: 'center'},
 			{src: 'image/52_katame0.png', 		id: 'katame0'},
+			{src: 'image/52_nagashi.png', 		id: 'nagashi'},
 			{src: 'image/53_general_hl.png', 		id: 'pattun0_hl'},
 			{src: 'image/53_general_hl.png', 		id: 'pattun1_hl'},
 			{src: 'image/53_general_hl.png', 		id: 'pattun2_hl'},
@@ -673,9 +805,13 @@ Custom.prototype.initialize = function() {
 			{src: 'image/53_general_hl.png', 		id: 'mof0_hl'},
 			{src: 'image/53_general_hl.png', 		id: 'mof1_hl'},
 			{src: 'image/53_general_hl.png', 		id: 'mof2_hl'},
+			{src: 'image/53_Mji_hl.png', 		id: 'Mji0_hl'},
+			{src: 'image/53_Mji_hl.png', 		id: 'Mji1_hl'},
+			{src: 'image/53_Mji_hl.png', 		id: 'Mji2_hl'},
 			{src: 'image/53_naname_hl.png', 		id: 'naname_hl'},
 			{src: 'image/53_naname_hl.png', 		id: 'katame0_hl'},
 			{src: 'image/53_center_hl.png', 		id: 'center_hl'},
+			{src: 'image/53_nagashi_hl.png', 		id: 'nagashi_hl'},
 			
 			{src: 'image/54_side0.png', 		id: 'side0'},
 			{src: 'image/54_side1.png', 		id: 'side1'},
@@ -691,8 +827,6 @@ Custom.prototype.initialize = function() {
 			{src: 'image/55_general_hl.png', 		id: 'wave2_hl'},
 			{src: 'image/55_general_hl.png', 		id: 'moff0_hl'},
 			{src: 'image/55_general_hl.png', 		id: 'moff2_hl'},
-			{src: 'image/55_general_hl.png.png', 		id: 'moff0_hl'},
-			{src: 'image/55_general_hl.png.png', 		id: 'moff2_hl'},
 			
 			{src: 'image/56_headphone.png', 		id: 'earmuff_headphone'},
 			{src: 'image/57_hairbandB.png', 		id: 'hairbandB'},
@@ -884,11 +1018,11 @@ Custom.prototype.formLoad = function (){
 		for(var i = 0; i < array.length; i++){
 			custom.layer[array[i]] = new createjs.Bitmap();
 		}
-		custom.layer[3].image = custom.images['base'];
-		custom.layer[4].image = custom.images['base_hl'];
+		custom.layer[4].image = custom.images['base'];
+		custom.layer[5].image = custom.images['base_hl'];
 		
 		custom.layer[1].compositeOperation ='lighter';
-		custom.layer[4].compositeOperation ='lighter';
+		custom.layer[5].compositeOperation ='lighter';
 		custom.layer[23].compositeOperation ='lighter';
 		custom.layer[42].compositeOperation ='lighter';
 		custom.layer[43].compositeOperation ='lighter';
@@ -918,6 +1052,7 @@ Custom.prototype.update = function (){
 	this.layer[0].image = this.images[this.data.back + this.data.cap];
 	this.layer[1].image = this.images[this.data.back + this.data.cap + this.data.hairhl];
 	this.layer[2].image = this.images['back_' + this.data.outer];
+	this.layer[3].image = this.images['back_' + this.data.bottom + this.data.bottomLength];
 	
 	this.layer[7].image = this.images[this.data.inner];
 	this.layer[8].image = this.images[this.data.glove + this.data.gloveColor];
@@ -950,8 +1085,8 @@ Custom.prototype.update = function (){
 	
 	this.layer[40].image = this.images['eye' + this.data.eyelashes];
 	this.layer[41].image = this.images['pupil' + this.data.pupil];
-	this.layer[42].image = this.images[this.data.pupilOption + ((this.data.pupil === '3') ? '_s':'')];
-	this.layer[43].image = this.images['pupil_hl' + this.data.pupilHl + ((this.data.pupil === '3') ? '_s':'')];
+	this.layer[42].image = this.images[this.data.pupilOption + ((this.data.pupil === '3' || this.data.pupil === '4') ? '_s':'')];
+	this.layer[43].image = this.images['pupil_hl' + this.data.pupilHl + ((this.data.pupil === '3') ? '_s':'') + ((this.data.pupil === '4') ? '_ss':'')];
 	this.layer[44].image = this.images['eyelashes' + this.data.eyelashes];
 	this.layer[45].image = this.images['eyebrow' + this.data.eyebrow + '_' + this.data.eyebrowEx];
 	
@@ -995,6 +1130,12 @@ Custom.prototype.necktie = function(){
 			case 'shirtOpenB':
 				this.data.necktie += 'O';
 				break;
+			case 'kimonoB':
+			case 'kimonoR':
+			case 'kimonoW':
+			case 'miko':
+				this.data.necktie += 'K';
+				break;
 			default:
 				this.data.necktie += 'G';
 				break;
@@ -1020,7 +1161,7 @@ Custom.prototype.cap = function(){
 	case 'knitcap':
 	case 'military':
 	case 'witch':
-		if(this.data.back === 'pony' || this.data.back === 'twin' || this.data.back === 'twoside'){
+		if(this.data.back === 'pony' || this.data.back === 'twin' || this.data.back === 'sidetail' || this.data.back === 'pig' || this.data.back === 'twoside'){
 			this.data.cap = 'C'
 		}
 		break;
@@ -1035,11 +1176,15 @@ Custom.prototype.ribbon = function(){
 			this.data.headType = '_p'
 			break;
 		case 'twin':
+		case 'pig':
 		case 'twoside':
 			this.data.headType = '_t'
 			break;
 		case 'lowtwin':
 			this.data.headType = '_l'
+			break;
+		case 'sidetail':
+			this.data.headType = '_s'
 			break;
 		}
 	}
@@ -1055,9 +1200,16 @@ Custom.prototype.longCoat = function(){
 Custom.prototype.onepiece = function(){
 	this.data.onepiece = false;
 	this.data.bottom = document.forms.customForm.bottom.value;
-	if(this.data.top === 'maid' || this.data.top === 'maidEro'){
+	switch(this.data.top){
+	case 'maid':
+	case 'maidEro':
+	case 'kimonoB':
+	case 'kimonoR':
+	case 'kimonoW':
+	case 'miko':
 		this.data.bottom = '';
 		this.data.onepiece = true;
+		break;
 	}
 };
 

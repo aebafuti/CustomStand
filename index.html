@@ -15,7 +15,7 @@
 <body>
 <div id="wrap"> 
 	<div id="header">
-		カスタム立ち絵　ver0.85
+		カスタム立ち絵　ver0.86
         </div><!-- /header -->  
 	<div id="inner">
 		<div id="leftWrap">
@@ -33,9 +33,14 @@
 					<option value="mof0">モフ</option>
 					<option value="mof1">モフ(短)</option>
 					<option value="mof2">モフ(長)</option>
+					<option value="Mji0">Ｍ字</option>
+					<option value="Mji1">Ｍ字(短)</option>
+					<option value="Mji2">Ｍ字(長)</option>
 					<option value="naname">斜め分け</option>
 					<option value="center">センター分け</option>
 					<option value="katame0">片目隠れ</option>
+					<option value="nagashi">流し</option>
+					
 					</select></label>
 					<br>
 
@@ -61,6 +66,8 @@
 					<option value="wave">ウェーブ</option>
 					<option value="pony">ポニーテール</option>
 					<option value="twin">ツインテール</option>
+					<option value="pig">ピッグテール</option>
+					<option value="sidetail">サイドテール</option>
 					<option value="twoside">ツーサイドアップ</option>
 					<option value="ippon">一本結び</option>
 					<option value="lowtwin">ローツイン</option>
@@ -90,7 +97,7 @@
 				<div class="itemLabel">目（輪郭・瞳・光・オプション）</div>
 				<div class="itemContents">
 					<input type="number" name="eye" min="0" max="4" value="0" style="width:25px;" onchange="custom.eye(this.value)">
-					<input type="number" name="pupil" min="0" max="3" value="2" style="width:25px;" onchange="custom.pupil(this.value)">
+					<input type="number" name="pupil" min="0" max="4" value="2" style="width:25px;" onchange="custom.pupil(this.value)">
 					<input type="number" name="pupilHl" min="0" max="4" value="1" style="width:25px;" onchange="custom.pupilHl(this.value)">
 					
 					<select id="pupilOption" name="pupilOption" onchange="custom.pupilOption(this.value)">
@@ -206,6 +213,10 @@
 						<option value="tubeW">チューブ(白)</option>
 						<option value="maid">メイド服</option>
 						<option value="maidEro">エロメイド服</option>
+						<option value="kimonoB">着物(黒)</option>
+						<option value="kimonoW">着物(白)</option>
+						<option value="kimonoR">着物(赤)</option>
+						<option value="miko">巫女服</option>
 					</select></label>
 					
 					<label><input type="number" name="sleeve" min="0" max="3" value="1" style="width:30px;" oninput="custom.topSleeve(this.value)"></label>
@@ -221,6 +232,9 @@
 						<option value="skirtB">プリーツ(黒)</option>
 						<option value="skirtR">プリーツ(赤)</option>
 						<option value="skirtBu">プリーツ(青)</option>
+						<option value="fishtailB">テール(黒)</option>
+						<option value="fishtailR">テール(赤)</option>
+						<option value="fishtailBu">テール(青)</option>
 						<option value="tight">タイト</option>
 						<option value="jeans">ジーンズ</option>
 						<option value="stretch">ストレッチ</option>
@@ -413,6 +427,13 @@
 	
 	<div class="botoomLabel">更新履歴</div>
 		<div class="botoomContents">
+		2016/07/05　ver0.86
+		<ul>
+		<li>「髪型」に「Ｍ字」「流し」「ピッグテール」「サイドテール」を追加</li>
+		<li>「トップ」に「着物(黒)」「着物(白)」「着物(赤)」「巫女服」を追加</li>
+		<li>「ボトム」に「テール(黒)」「テール(赤)」「テール(青)」を追加</li>
+		<li>「瞳」の「4」を追加</li>
+		</ul>
 		2016/06/27　ver0.85
 		<ul>
 		<li>「髪型」に「ウェーブ」「ローツイン」を追加</li>
