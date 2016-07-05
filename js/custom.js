@@ -1296,7 +1296,7 @@ Custom.prototype.skinColor = function(value){
 }
 
 Custom.prototype.changeSkinColor = function(){
-	var array = [3, 20, 30, 47]; //素体、乳、髪影、耳
+	var array = [4, 20, 30, 47]; //素体、乳、髪影、耳
 	for(var i = 0; i < array.length; i++){
 		if(array[i] === 47 && (this.data.ear === 'mecha' || this.data.ear === 'antenna')){ 
 			this.layer[array[i]].filters = null;
